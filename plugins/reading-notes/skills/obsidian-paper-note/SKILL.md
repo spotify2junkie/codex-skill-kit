@@ -1,6 +1,6 @@
 ---
 name: obsidian-paper-note
-description: "Turn a supplied paper, article, PDF, or URL into a source-faithful critical Obsidian engineering reading note with an embedded ELI5 explainer PDF. Use when creating a standalone paper note or appending one paper to a named master note; includes risk-control, business, career, and TikTok transfer analysis when relevant."
+description: "Turn one or more supplied papers, articles, PDFs, or URLs into source-faithful critical Obsidian engineering reading notes with embedded ELI5 explainer PDFs. Use for a standalone paper note, a multi-paper combined note, or appending papers to a named master note; includes risk-control, business, career, and TikTok transfer analysis when relevant."
 ---
 
 # Obsidian paper note
@@ -9,9 +9,15 @@ Turn the material the user supplies into a note that can be understood, audited,
 
 ## Choose the write mode
 
-- **Append mode:** when the user names a master note, add one numbered article section to that same Markdown file. Do not create a sibling article note.
-- **Standalone mode:** when no master note is named, create one Markdown note for the source.
+- **Append mode:** when the user names an existing master note, add one numbered article section per supplied source to that same Markdown file. Do not create sibling article notes.
+- **Combined mode:** when the user supplies multiple sources and does not name an existing master note, create one new Markdown note containing all sources. This is the default for a batch.
+- **Standalone mode:** when the user supplies exactly one source, create one Markdown note for that source.
+- **Separate-notes mode:** create one Markdown note per source only when the user explicitly asks for separate, individual, or one-note-per-paper files.
 - **Analysis-only mode:** when the user asks only for an explanation or review, do not write to Obsidian.
+
+Explicit output-cardinality language overrides these defaults. Treat phrases such as `放在一起`, `统一整理`, `合并成一个`, `一个 note`, or `最终只保留一个 Markdown` as a hard requirement for combined or append mode. Do not infer standalone or separate-notes mode merely because the user did not name a master note.
+
+Before writing, establish a small artifact contract: source count, write mode, final Markdown count, expected PDF count, and destination. For combined mode, the final Markdown count is exactly one. Organize its articles as `## 01. ...`, `## 02. ...`, and so on; keep one attachment bundle per source so PDFs and figures remain independently replaceable.
 
 For Obsidian writes, read [references/local-obsidian.md](references/local-obsidian.md). Preserve an existing note's numbering, attachment convention, and heading style. Never overwrite an unrelated note or replace a master note with one article.
 
@@ -34,8 +40,8 @@ For Obsidian writes, read [references/local-obsidian.md](references/local-obsidi
 
 ## Finish the artifact safely
 
-Write the Markdown and its assets together. Use relative Obsidian embeds such as `![[附件/<bundle>/<file>.pdf]]`. When moving a note, move its attachment bundle or rewrite every embed so that no link breaks.
+Write the Markdown and its assets together. Use relative Obsidian embeds such as `![[附件/<bundle>/<file>.pdf]]`. When moving a note, move its attachment bundle or rewrite every embed so that no link breaks. In combined mode, do not leave intermediate per-paper Markdown files in the destination. If intermediate notes are useful while drafting, keep them outside the vault or move only task-created intermediates to a recoverable workspace archive after the combined note passes verification.
 
-Run `scripts/verify_note_bundle.py` on the final note and pass the expected article and PDF counts. Use `--expected-pdfs 0` only when the user explicitly chose text-only output. For notes with an embedded PDF, read the bundled `../verify-obsidian-notes/SKILL.md` and run its doctor, automated verification, rendered-page inspection, visual attestation, and final status as well. ONV is the strict PDF profile; when the user explicitly chooses text-only, use this skill’s bundle verifier with `--expected-pdfs 0` instead. A machine pass does not replace looking at every PDF page.
+Run `scripts/verify_note_bundle.py` on the final note and pass the expected article and PDF counts. In combined mode, `--expected-articles` equals the number of supplied sources and `--expected-pdfs` normally equals that same number. In append mode, the expected article count is the final total in the master note. In standalone mode, the expected numbered-article count is normally zero. Use `--expected-pdfs 0` only when the user explicitly chose text-only output. Then inventory the destination and confirm the task created exactly the contracted number of Markdown files. For notes with an embedded PDF, read the bundled `../verify-obsidian-notes/SKILL.md` and run its doctor, automated verification, rendered-page inspection, visual attestation, and final status as well. ONV is the strict PDF profile; when the user explicitly chooses text-only, use this skill’s bundle verifier with `--expected-pdfs 0` instead. A machine pass does not replace looking at every PDF page.
 
 Report the note path, whether it was appended or created, the PDF and figure count, source limitations, and verification result. Do not claim publication, visual review, or link validity unless it was actually checked.

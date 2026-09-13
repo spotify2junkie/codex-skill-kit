@@ -4,7 +4,7 @@
 
 | Skill | 作用 | 配套资源 |
 | --- | --- | --- |
-| `obsidian-paper-note` | 来源忠实的论文精读、主笔记追加、风险与迁移分析 | 笔记结构、证据边界、10 页 PDF 规范、存储约定、`verify_note_bundle.py` |
+| `obsidian-paper-note` | 来源忠实的论文精读、批量合并、主笔记追加、风险与迁移分析 | 笔记结构、证据边界、10 页 PDF 规范、存储约定、`verify_note_bundle.py` |
 | `eli5` | 面向读者基础解释机制与代价 | 受众与类比约束 |
 | `explain-eli5` | 卡通手绘、两格漫画式 HTML 图解 | 浅/深主题、术语与图示、浏览器渲染验证约定 |
 | `verify-obsidian-notes` | Obsidian 笔记、嵌入 PDF 和框架图的验收 | `onv.py`、verification contract、四类 feature recipes |
@@ -14,6 +14,10 @@
 `obsidian-paper-note` 组织内容，结合 `eli5` 与 `explain-eli5` 制作教学层；`verify_note_bundle.py` 检查笔记与附件。含 PDF 的严格精读使用 `verify-obsidian-notes` 的 doctor → verify → 查看每一页 → attest → status 流程。只有实际人工查看通过后才能得到最终视觉验收结论。
 
 纯 Markdown 是用户明确选择的模式，此时只运行不要求 PDF 的 bundle 验证器。不能为了通过验证器制造 PDF 或视觉证明。
+
+## 批量论文输出规则
+
+多篇来源默认合并为一个新的 Markdown 笔记；指定已有主笔记时追加到该文件。只有用户明确要求分开时才一篇一份。写入前确定来源数、模式、最终 Markdown 数、预期 PDF 数和目的地，完成后核对文件数量。每篇来源保留独立附件包；任务中间稿不遗留在目标 vault。
 
 ## 目标机器依赖
 

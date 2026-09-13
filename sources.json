@@ -27,6 +27,11 @@
       "verify-obsidian-notes"
     ],
     "portability_change": "Removed personal vault path and note names; resolve verifier from installed skill path; bundle the strict PDF verification dependency.",
-    "verification_source": "Personal reading workspace skill; scripts, feature recipes, and contract included."
+    "verification_source": "Personal reading workspace skill; scripts, feature recipes, and contract included.",
+    "latest_paper_note_sync": {
+      "source_skill_sha256": "c0a998ee9b614bf381f96e1d432f0e0594197d1ef8c56dbc3cd3b186b76de168",
+      "changes": "Batch sources default to one combined Markdown note; explicit separate-note mode; output cardinality contract and final inventory checks.",
+      "preserved_portability": "Destination-neutral vault reference and bundled ONV routing."
+    }
   }
 }
