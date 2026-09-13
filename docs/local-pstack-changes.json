@@ -1,0 +1,15 @@
+[
+  "poteto-mode/SKILL.md",
+  "poteto-mode/references/codex-agent-runtime.md",
+  "poteto-mode/agents/openai.yaml",
+  "poteto-mode/playbooks/bug-fix.md",
+  "poteto-mode/playbooks/investigation.md",
+  "poteto-mode/playbooks/feature.md",
+  "poteto-mode/playbooks/perf-issue.md",
+  "poteto-mode/playbooks/refactoring.md",
+  "poteto-mode/scripts/bootstrap.ts",
+  "poteto-mode/scripts/watch-pr/policy.test.ts",
+  "poteto-mode/scripts/watch-pr/cli.ts",
+  "poteto-mode/scripts/watch-pr/policy.ts",
+  "poteto-mode/scripts/watch-pr/cli.test.ts"
+]

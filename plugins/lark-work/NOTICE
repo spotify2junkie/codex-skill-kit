@@ -1,0 +1,5 @@
+Lark skills are from the official Lark CLI distribution, installed on 2026-09-03.
+Source: https://github.com/larksuite/cli/tree/main/skills
+Distribution: https://open.feishu.cn/lark-cli/skills/regular/.well-known/agent-skills/
+MIT License, Copyright (c) 2026 Lark Technologies Pte. Ltd.
+Skill content is preserved without modification. Credentials and CLI binaries are excluded.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian 论文精读"
+  short_description: "把论文变成带 ELI5 PDF 的批判性 Obsidian 精读笔记"
+  default_prompt: "使用 $obsidian-paper-note 将我提供的论文制作成可审计的 Obsidian 精读笔记，并生成嵌入式 ELI5 PDF。"

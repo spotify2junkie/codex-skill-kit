@@ -1,0 +1,23 @@
+{
+  "name": "lark-work",
+  "version": "1.0.0",
+  "description": "飞书文档、消息、日程、会议、任务与多维表格等操作；首次使用需配置公司身份。",
+  "author": {
+    "name": "spotify2junkie"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "飞书工作操作",
+    "shortDescription": "飞书文档、消息、日程、会议、任务与多维表格等操作；首次使用需配置公司身份。",
+    "category": "Productivity",
+    "longDescription": "飞书文档、消息、日程、会议、任务与多维表格等操作；首次使用需配置公司身份。",
+    "developerName": "spotify2junkie",
+    "defaultPrompt": [
+      "请按我的请求使用相关 skills，完成操作与验证。"
+    ],
+    "capabilities": [
+      "Read and analyze documents",
+      "Assist with domain workflows"
+    ]
+  }
+}

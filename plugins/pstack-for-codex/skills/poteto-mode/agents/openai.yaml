@@ -1,0 +1,6 @@
+interface:
+  display_name: "Poteto Mode"
+  short_description: "Lean, verified workflow for nontrivial software changes"
+  default_prompt: "$poteto-mode solve this with deeper design exploration only where it materially changes the result."
+policy:
+  allow_implicit_invocation: true

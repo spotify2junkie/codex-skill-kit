@@ -1,0 +1,23 @@
+{
+  "name": "reading-notes",
+  "version": "1.0.0",
+  "description": "论文精读、批判性分析与 ELI5 图解；笔记路径和承载形式按需配置。",
+  "author": {
+    "name": "spotify2junkie"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "论文阅读与笔记",
+    "shortDescription": "论文精读、批判性分析与 ELI5 图解；笔记路径和承载形式按需配置。",
+    "category": "Productivity",
+    "longDescription": "论文精读、批判性分析与 ELI5 图解；笔记路径和承载形式按需配置。",
+    "developerName": "spotify2junkie",
+    "defaultPrompt": [
+      "请按我的请求使用相关 skills，完成操作与验证。"
+    ],
+    "capabilities": [
+      "Read and analyze documents",
+      "Assist with domain workflows"
+    ]
+  }
+}

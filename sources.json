@@ -1,0 +1,30 @@
+{
+  "snapshot_date": "2026-09-13",
+  "pstack": {
+    "repository": "https://github.com/Aqua-123/pstack-for-codex",
+    "commit": "fbc4830ddf81288e251d8d81b2625dcbf8bdb48a",
+    "local_overrides": "docs/local-pstack-changes.json",
+    "skills": 45,
+    "portability_changes": [
+      "Removed obsolete skill policy.products metadata; preserved allow_implicit_invocation.",
+      "Added root installation guide banner to upstream README.",
+      "Version marked as local portable snapshot."
+    ]
+  },
+  "lark": {
+    "repository": "https://github.com/larksuite/cli",
+    "distribution": "https://open.feishu.cn/lark-cli/skills/regular/.well-known/agent-skills/",
+    "installed_date": "2026-09-03",
+    "local_cli_version": "1.0.93",
+    "skills": 28
+  },
+  "reading": {
+    "source": "Personal local skills snapshot",
+    "skills": [
+      "obsidian-paper-note",
+      "explain-eli5",
+      "eli5"
+    ],
+    "portability_change": "Removed personal vault path and note names; defer destination configuration."
+  }
+}
