@@ -12,6 +12,8 @@
 - Obsidian skill 通过 skill-creator 校验；已移除私人 vault 路径和主笔记名称。
 - 对分发文件检查常见凭据格式和旧电脑路径，未发现凭据或私人路径。飞书材料中的示例 ID 和 P-Stack 测试中的 `/Users/operator` 是原分发中的示例，不是当前用户资料。
 
+发布后已从公开 GitHub 仓库再次运行完整隔离安装检查并通过；安装提示词的匿名 HTTP 访问返回 200，GitHub 仓库可见性为 public。
+
 可重复执行：
 
 ```bash
