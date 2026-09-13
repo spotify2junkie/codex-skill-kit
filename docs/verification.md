@@ -4,8 +4,9 @@
 
 - 三个插件均通过当前 plugin-creator 的 manifest / skills 校验。
 - 在临时 CODEX_HOME 中实际注册 marketplace、安装三个插件、查询 installed/enabled 状态、移除插件和 marketplace。没有复制当前用户认证文件。
-- 安装后的全部分发文件与源目录逐文件一致：45 个 P-Stack skills、28 个飞书 skills、3 个阅读 skills。
+- 安装后的全部分发文件与源目录逐文件一致：45 个 P-Stack skills、28 个飞书 skills、4 个阅读 skills。
 - 从安装后的 P-Stack 执行可选 agent setup，写入临时项目和临时 user-home；两个模板成功展开，重复安装内容一致。真实用户 agent 配置未改动。
+- 新增 ONV 验收 skill 完整文件校验与 CLI 检查；doctor 在依赖完整的临时笔记上通过，在笔记位于给定 vault 之外时正确拒绝。
 - 阅读验证器：纯 Markdown 测试笔记通过；不存在的附件被正确拒绝。PDF 渲染链路不在本次迁移验证范围。
 - P-Stack orchestrator / watch-pr：54 个 Bun 测试通过，TypeScript strict typecheck 通过。
 - P-Stack model policy / Benny state machine：17 个 Node 测试通过。

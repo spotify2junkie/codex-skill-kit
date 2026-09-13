@@ -23,8 +23,10 @@
     "skills": [
       "obsidian-paper-note",
       "explain-eli5",
-      "eli5"
+      "eli5",
+      "verify-obsidian-notes"
     ],
-    "portability_change": "Removed personal vault path and note names; defer destination configuration."
+    "portability_change": "Removed personal vault path and note names; resolve verifier from installed skill path; bundle the strict PDF verification dependency.",
+    "verification_source": "Personal reading workspace skill; scripts, feature recipes, and contract included."
   }
 }

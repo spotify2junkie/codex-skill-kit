@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Notes Verify (ONV)"
+  short_description: "验证 Obsidian 精读笔记、ELI5 PDF 与架构数据流"
+  default_prompt: "Use $verify-obsidian-notes to verify this Obsidian reading note and its embedded PDF."

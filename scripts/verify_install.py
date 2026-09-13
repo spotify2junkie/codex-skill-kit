@@ -8,7 +8,7 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 3}
+COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 4}
 
 
 def run(args, env, cwd=None):
@@ -63,6 +63,18 @@ def main():
         note.write_text(note.read_text() + '\n![[missing.png]]\n')
         missing = subprocess.run(verify_cmd, env=env, text=True, capture_output=True)
         assert missing.returncode == 1 and 'missing embed' in missing.stdout
+        onv = installed['reading-notes'] / 'skills/verify-obsidian-notes/scripts/onv.py'
+        run(['python3', str(onv), '--help'], env)
+        doctor_cmd = ['python3', str(onv), 'doctor', '--note', str(note), '--vault-root', str(temporary)]
+        doctor = subprocess.run(doctor_cmd, env=env, text=True, capture_output=True)
+        import shutil
+        have_pdf_tools = all(shutil.which(tool) for tool in ['pdfinfo', 'pdftotext', 'pdftoppm', 'magick'])
+        assert doctor.returncode == (0 if have_pdf_tools else 1)
+        assert ('ONV_DOCTOR_OK' if have_pdf_tools else 'required command missing') in doctor.stdout
+        outside_root = temporary / 'another-vault'
+        outside_root.mkdir()
+        outside = subprocess.run(doctor_cmd[:-1] + [str(outside_root)], env=env, text=True, capture_output=True)
+        assert outside.returncode == 1 and 'note is outside vault root' in outside.stdout
         listing = json.loads(run(['codex', 'plugin', 'list', '--json'], env))
         assert {item['pluginId'] for item in listing['installed']} == {f'{name}@personal' for name in COUNTS}
         assert all(item['installed'] and item['enabled'] for item in listing['installed'])
@@ -70,6 +82,8 @@ def main():
                           'installed_files_match_source': True,
                           'agent_template_install_and_repeat': 'PASS',
                           'reading_verifier_valid_note_and_missing_embed': 'PASS',
+                          'onv_doctor_and_vault_boundary': 'PASS',
+                          'onv_pdf_tools_available': have_pdf_tools,
                           'runtime_skill_discovery': 'Requires a new Codex task; not exercised',
                           'lark_auth': 'Not exercised; user login required'}, ensure_ascii=False, indent=2))
         for name in COUNTS:

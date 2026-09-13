@@ -36,6 +36,6 @@ For Obsidian writes, read [references/local-obsidian.md](references/local-obsidi
 
 Write the Markdown and its assets together. Use relative Obsidian embeds such as `![[附件/<bundle>/<file>.pdf]]`. When moving a note, move its attachment bundle or rewrite every embed so that no link breaks.
 
-Run `scripts/verify_note_bundle.py` on the final note and pass the expected article and PDF counts. Use `--expected-pdfs 0` only when the user explicitly chose text-only output. If the workspace provides `verify-obsidian-notes`, run its doctor, automated verification, rendered-page inspection, visual attestation, and final status as well. A machine pass does not replace looking at every PDF page.
+Run `scripts/verify_note_bundle.py` on the final note and pass the expected article and PDF counts. Use `--expected-pdfs 0` only when the user explicitly chose text-only output. For notes with an embedded PDF, read the bundled `../verify-obsidian-notes/SKILL.md` and run its doctor, automated verification, rendered-page inspection, visual attestation, and final status as well. ONV is the strict PDF profile; when the user explicitly chooses text-only, use this skill’s bundle verifier with `--expected-pdfs 0` instead. A machine pass does not replace looking at every PDF page.
 
 Report the note path, whether it was appended or created, the PDF and figure count, source limitations, and verification result. Do not claim publication, visual review, or link validity unless it was actually checked.

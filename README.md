@@ -6,13 +6,13 @@
 | --- | --- | --- |
 | `pstack-for-codex` | 45 个 P-Stack skills；保留本机 Poteto Mode 的调整 | 是 |
 | `lark-work` | 28 个飞书 skills：文档、知识库、多维表格、表格、消息、日历、会议、任务等 | 是 |
-| `reading-notes` | Obsidian 论文精读、ELI5 解释、漫画式图解，共 3 个 skills | 否，确定笔记承载形式后启用 |
+| `reading-notes` | Obsidian 论文精读、ELI5 解释、漫画式图解，以及笔记/PDF 验收，共 4 个 skills | 是；存储配置稍后确定 |
 
 ## 发给新电脑 Codex
 
 复制 [INSTALL_PROMPT.md](INSTALL_PROMPT.md) 的整段文字，或直接说：
 
-> 请读取 https://github.com/spotify2junkie/codex-skill-kit 的 README.md 和 BOOTSTRAP.md，在这台电脑的 Codex 中安装 P-Stack 和飞书插件，保留现有配置。Obsidian 阅读插件先不安装、不迁移笔记；检查依赖与安装结果，飞书首次使用时再配置公司身份。
+> 请读取 https://github.com/spotify2junkie/codex-skill-kit 的 README.md 和 BOOTSTRAP.md，在这台电脑的 Codex 中安装 P-Stack、飞书和完整阅读插件，保留现有配置。阅读 skills 一并安装，笔记内容和存储位置等我确定后再迁移；检查依赖与安装结果，飞书首次使用时再配置公司身份。
 
 ## 安装
 
@@ -22,6 +22,7 @@
 codex plugin marketplace add spotify2junkie/codex-skill-kit --ref main
 codex plugin add pstack-for-codex@personal
 codex plugin add lark-work@personal
+codex plugin add reading-notes@personal
 codex plugin list --json
 ```
 
@@ -42,15 +43,15 @@ Poteto Mode 保留本机的自动发现设置；其他 P-Stack skills 保留各�
 
 - **P-Stack**：基础说明可直接使用；Node.js 20+ 支撑 `.mjs` 工具。Bun 支撑 orchestrator / watch-pr，相关工具按锁文件安装依赖。GitHub 操作需要新电脑自己的 `gh` 授权；旧电脑凭据不迁移。
 - **飞书**：需要官方 `@larksuite/cli`。本快照对应旧电脑已安装的 `1.0.93`。新电脑优先沿用公司提供的 CLI；缺失时按 [BOOTSTRAP.md](BOOTSTRAP.md) 安装匹配版本。首次使用按照 `lark-shared` 完成配置和公司账号授权；新版本与快照不兼容时按官方说明同步更新。
-- **阅读**：Markdown 分析不依赖旧 vault；PDF 工作流还需要目标环境可用的 PDF skill、PDF 渲染工具和浏览器。缺少时明确列出，不声称 PDF 流程已就绪。
+- **阅读**：Markdown 分析不依赖旧 vault；验证器需要 Python 3.10+，完整 PDF 验收需要 Poppler 和 ImageMagick；PDF 创作与图解工作流还需要目标环境可用的 PDF skill 和浏览器。缺少时明确列出，不声称 PDF 流程已就绪。
 
-## 阅读架构稍后迁移
+## 阅读 skills 一起安装，笔记架构稍后迁移
 
 ```bash
 codex plugin add reading-notes@personal
 ```
 
-此包只迁移阅读方法、图解风格和验证脚本。没有旧笔记、附件、私人 vault 路径、iCloud 配置或笔记应用设置。确定使用 Obsidian、飞书或其他载体后，再配置目标位置和附件策略。迁移到其他载体时需要适配写入与嵌入语法；不把 Obsidian 的 `![[...]]` 当作跨平台格式。
+[完整阅读包](docs/reading-kit.md)迁移阅读方法、图解风格、笔记与 PDF 验收脚本及全部配套说明。没有旧笔记、附件、私人 vault 路径、iCloud 配置或笔记应用设置。确定使用 Obsidian、飞书或其他载体后，再配置目标位置和附件策略。迁移到其他载体时需要适配写入与嵌入语法；不把 Obsidian 的 `![[...]]` 当作跨平台格式。
 
 ## 更新与移除
 
