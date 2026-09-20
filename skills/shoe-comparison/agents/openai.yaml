@@ -1,0 +1,6 @@
+interface:
+  display_name: "鞋款双图选购指南"
+  short_description: "完整鞋款参数对比与分组 Top 3 推荐双图，保留来源、取舍及 SOLE鞋履 credit"
+  default_prompt: "使用 $shoe-comparison 核验我给的鞋款，生成完整对比图和分组 Top 3 推荐图，并注明 Credit to SOLE鞋履。"
+policy:
+  allow_implicit_invocation: true

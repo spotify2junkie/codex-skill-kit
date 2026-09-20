@@ -1,0 +1,110 @@
+Create a high-resolution portrait Chinese shoe recommendation poster.
+Charcoal background; cyan model names; orange #1 首选; white #2; cyan #3. Readable typography before decoration.
+This is a qualitative editorial guide. Do not add lab values, prices, scores, sales claims, health promises or endorsements.
+主标题：HOKA 非越野跑选购指南 · 50 款
+副标题：我的分组推荐 TOP 3
+说明：基于资料的选购判断；不是销量榜，不是跨用途总榜。
+范围：50 款现款与往代选购示例，排除越野跑；不是销量 Top 50。使用时重新核验，勿当成固定推荐。
+核验日期：2026-09-20
+Keep exact model names, categories and rank order. Include every shoe. Expand canvas as needed; do not silently omit entries.
+
+分组：日常缓震与轻松跑
+排序依据：通勤兼慢跑：舒适、透气和适配优先。
+Top 1 首选：HOKA Clifton 11
+推荐：柔软透气，通勤兼慢跑
+取舍：回弹偏低、鞋头收窄
+Top 2：HOKA Bondi 9
+推荐：厚底缓震，慢跑长走
+取舍：偏重、标准楦较窄
+Top 3：HOKA Skyflow
+推荐：耐用抓地，累积跑量
+取舍：弯折偏硬、长走非强项
+其他备选（未排序）：HOKA Clifton PRO / HOKA Clifton 10 / HOKA Clifton 9 / HOKA Bondi 8 / HOKA Rincon 4 / HOKA Rincon 3 / HOKA Skyward X 2 / HOKA Skyward X / HOKA Clifton 9 GTX
+
+分组：稳定支撑
+排序依据：稳定底座与支撑感优先。
+Top 1 首选：HOKA Gaviota 6
+推荐：底座稳，前掌空间友好
+取舍：回弹低、吸震一般
+Top 2：HOKA Arahi 9
+推荐：支撑不僵硬，耐用抓地
+取舍：比上一代重、回弹低
+Top 3：HOKA Arahi 8
+推荐：较轻的稳定日训选择
+取舍：往代、透气弱
+其他备选（未排序）：HOKA Arahi 7 / HOKA Gaviota 5
+
+分组：速度训练
+排序依据：日常训练兼提速的通用性优先。
+Top 1 首选：HOKA Mach 7
+推荐：轻快透气，日常兼提速
+取舍：楦型偏紧、脚感不软
+Top 2：HOKA Mach 6
+推荐：轻量多面，往代备选
+取舍：鞋头窄、鞋舌薄
+Top 3：HOKA Mach X 3
+推荐：厚底滚动，长距离节奏跑
+取舍：鞋楦很紧、鞋舌欠佳
+其他备选（未排序）：HOKA Mach 5 / HOKA Mach X 2 / HOKA Mach X
+条件说明：长距离节奏训练可优先试 Mach X 3。
+
+分组：公路竞赛
+排序依据：大众跑者的综合适配、稳定与耐用优先。
+Top 1 首选：HOKA Rocket X 3
+推荐：竞赛鞋中较稳、耐用
+取舍：不够轻、鞋头偏窄
+Top 2：HOKA Cielo X1 3.0
+推荐：更轻强滚动，适合激进脚感
+取舍：很紧、耐用性弱
+Top 3：HOKA Cielo X1 2.0
+推荐：高回弹透气，往代竞速
+取舍：滚动激进、楦型窄
+其他备选（未排序）：HOKA Rocket X 2 / HOKA Cielo X1 / HOKA Carbon X 3
+条件说明：推荐顺序不等于绝对速度排名。
+
+分组：城市通勤与轻运动
+排序依据：步行舒适、抓地、耐用优先。
+Top 1 首选：HOKA Transport 2
+推荐：耐磨抓地，通勤长走
+取舍：透气弱，热天慎选
+Top 2：HOKA Clifton LS
+推荐：生活方式穿搭，包裹耐用
+取舍：偏重、透气一般
+Top 3：HOKA Kawana 3
+推荐：通勤兼轻健身，抓地稳
+取舍：不适合宽脚、外露泡棉易磨
+其他备选（未排序）：HOKA Kawana 2 / HOKA Solimar / HOKA Transport / HOKA Transport GTX / HOKA Bondi SR
+条件说明：工作防滑需求可单独考虑 Bondi SR。
+
+分组：徒步专区
+排序依据：普通一日徒步；不含越野跑。
+Top 1 首选：HOKA Anacapa 2 Low GTX
+推荐：均衡缓震抓地，一日徒步
+取舍：网布耐磨有限
+Top 2：HOKA Kaha 3 Low GTX
+推荐：支撑耐用，长路线与负重
+取舍：偏重、闷热
+Top 3：HOKA Transport Hike GTX
+推荐：较轻防水靴，城市到轻徒步
+取舍：鞋头窄、内衬耐磨有限
+其他备选（未排序）：HOKA Kaha 2 Low GTX / HOKA Skyline-Float X / HOKA Kaha 3 GTX / HOKA Anacapa Mid GTX / HOKA Anacapa 2 Mid GTX / HOKA Kaha 2 GTX / HOKA Trail Code GTX
+条件说明：负重支撑优先时，Kaha 3 Low GTX 可排第一。
+
+分组：运动后与休闲恢复
+排序依据：按穿用便利排序，非恢复疗效排名。
+Top 1 首选：HOKA ORA Recovery Slide 3
+推荐：套脚方便，运动后与居家
+取舍：非跑鞋，缺同口径实测
+Top 2：HOKA ORA Recovery Flip
+推荐：喜欢夹趾款式时的备选
+取舍：夹趾体验因人而异，缺同口径实测
+Top 3：HOKA Restore TC
+推荐：想要包头式休闲鞋时考虑
+取舍：偏闷、外露泡棉易磨
+条件说明：Restore TC 从原通勤组移入本组；两款 ORA 缺少同口径实测。
+
+Footer, visibly readable: Credit to SOLE鞋履
+参数决策卡与表达方式的灵感来源；本次数据核验与推荐独立整理。
+原始数据与推荐依据见配套来源页。Credit 不是数据来源，也不是本次排名作者。
+If shoe illustrations are used, mark 鞋图为示意. Avoid implying an exact product photo.
+Before finalizing, verify all supplied model names and all group rank orders, no duplicates or substitutions.
