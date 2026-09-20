@@ -33,5 +33,13 @@
       "changes": "Batch sources default to one combined Markdown note; explicit separate-note mode; output cardinality contract and final inventory checks.",
       "preserved_portability": "Destination-neutral vault reference and bundled ONV routing."
     }
+  },
+  "skill_maintenance": {
+    "source": "Original skill authored for codex-skill-kit",
+    "skills": [
+      "skill-maintainer"
+    ],
+    "added": "2026-09-21",
+    "public_references": "plugins/skill-maintenance/skills/skill-maintainer/references/sources.md"
   }
 }

@@ -28,6 +28,10 @@ codex plugin list --json
 
 安装时会下载完整仓库，上述三个插件均启用。不能把三个包的 skills 混拷到一个目录：P-Stack 的 `setup-pstack` 和 `setup-benny` 依赖包根目录里的 templates / automations。
 
+### 可选 Skill 管理插件
+
+仅当用户要求管理、更新或合并 skills，或明确要求完整安装四个插件时，追加 `codex plugin add skill-maintenance@personal`。它包含 1 个 `skill-maintainer`；无需外部账号或私人笔记。检查同名独立副本后安装，新任务刷新发现。默认迁移仍是上面的三个插件。使用说明见 [skill-maintenance.md](docs/skill-maintenance.md)。
+
 ## 3. 工具与身份
 
 基础 skill 安装和外部账号就绪分别报告。安装阶段不需要读取用户飞书消息或发送任何消息。
@@ -65,3 +69,5 @@ lark-cli --help
 3. 可在独立临时项目和临时 user-home 中运行 `setup-pstack/scripts/manage-agents.mjs install --scope project ...`，证明模板路径正确；不写用户真实 agent profiles。
 4. 汇报已安装插件、依赖缺项和账号待配置项。安装检查不等于运行时模型/权限/工具验证。
 5. 请用户新建任务刷新 skill 索引。在新任务用 `$poteto-mode` 或 `$how` 做一个小型只读任务，确认实际发现。飞书实测等用户完成授权和给出真实查询后再做。
+
+若安装了可选 `skill-maintenance`，另外核对 installed/enabled 状态、1 个 SKILL.md 及其 agents/references 文件。

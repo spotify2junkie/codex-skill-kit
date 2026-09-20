@@ -7,6 +7,7 @@
 | `pstack-for-codex` | 45 个 P-Stack skills；保留本机 Poteto Mode 的调整 | 是 |
 | `lark-work` | 28 个飞书 skills：文档、知识库、多维表格、表格、消息、日历、会议、任务等 | 是 |
 | `reading-notes` | Obsidian 论文精读、ELI5 解释、漫画式图解，以及笔记/PDF 验收，共 4 个 skills | 是；存储配置稍后确定 |
+| `skill-maintenance` | 1 个原创 Skill：冲突审计、更新、合并与行为验证 | 按需安装 |
 
 ## 发给新电脑 Codex
 
@@ -70,3 +71,19 @@ codex plugin add lark-work@personal
 [来源记录](sources.json)、[P-Stack 本机改动清单](docs/local-pstack-changes.json)、[验证记录](docs/verification.md)。P-Stack 和飞书保留各自 MIT 许可与声明。个人阅读 skills 是当前快照，未额外授予开源许可。
 
 仓库不包含 Codex/飞书/GitHub 凭据、聊天记录、公司数据、旧笔记或 `node_modules`。安装只注册本仓库插件，不替换全局 `AGENTS.md`，不固定模型，不创建自动化。
+
+## Skill 管理、冲突与合并
+
+新增可选插件 `skill-maintenance`，不改变 P-Stack 上游快照。使用方法、公开参考材料和验证记录见 [管理指南](docs/skill-maintenance.md)。
+
+```bash
+# 尚未注册本仓库时，按上面的安装步骤注册；已注册且来源匹配时更新索引：
+codex plugin marketplace upgrade personal
+codex plugin add skill-maintenance@personal
+```
+
+新建任务后使用：
+
+> $skill-maintainer 检查我指定的这些 skills，区分重复、触发重叠和规则冲突。保留现有能力与权限边界，完成必要的更新、合并及验证，告诉我改了什么和如何回退。
+
+[直接阅读 SKILL.md](plugins/skill-maintenance/skills/skill-maintainer/SKILL.md)；[公开研究材料](plugins/skill-maintenance/skills/skill-maintainer/references/sources.md)。无需私人 Obsidian 路径。

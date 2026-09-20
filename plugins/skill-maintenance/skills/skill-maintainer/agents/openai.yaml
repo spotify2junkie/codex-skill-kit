@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill 管理与合并"
+  short_description: "Audit, reconcile, update and merge agent skills"
+  default_prompt: "Use $skill-maintainer to review the specified skills, resolve overlaps and conflicts, implement the requested updates, and verify preserved behavior."

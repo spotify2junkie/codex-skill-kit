@@ -9,3 +9,5 @@ https://github.com/spotify2junkie/codex-skill-kit
 4. 不复制旧电脑登录态，不读取或展示密钥。飞书首次使用时再引导我配置公司身份；需要我登录或授权的步骤明确告诉我。
 5. 不固定 agent 模型，不创建或启动自动化，不替换全局 AGENTS.md。
 6. 安装后用 codex plugin list --json 核对插件、检查包内 skills 和依赖资源，并告诉我哪些已验证、哪些尚待登录或新任务验证。提醒我新建任务刷新 skills。
+
+可选：如果我同时要求管理 skills 的冲突、更新或合并，再安装 skill-maintenance 插件（1 个 skill-maintainer）；默认三插件迁移不自动扩大范围。

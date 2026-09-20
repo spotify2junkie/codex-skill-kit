@@ -1,0 +1,20 @@
+{
+  "name": "skill-maintenance",
+  "version": "0.1.0",
+  "description": "Audit, update and merge skills with conflict resolution and behavioral verification.",
+  "author": {
+    "name": "spotify2junkie"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Skill 管理与合并",
+    "shortDescription": "Audit, reconcile, update and merge agent skills",
+    "longDescription": "Audit, update and merge skills with conflict resolution and behavioral verification.",
+    "developerName": "spotify2junkie",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $skill-maintainer to maintain the specified skills and verify preserved behavior."
+    ]
+  }
+}

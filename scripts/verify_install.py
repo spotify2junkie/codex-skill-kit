@@ -8,7 +8,7 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 4}
+COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 4, 'skill-maintenance': 1}
 
 
 def run(args, env, cwd=None):
