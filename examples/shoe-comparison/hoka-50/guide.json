@@ -1,0 +1,1487 @@
+{
+  "title": "HOKA 非越野跑选购指南",
+  "date": "2026-09-20",
+  "scope": "男款 US9 单只口径；室温主泡棉；SA、回弹取后跟。",
+  "selection_note": "50 款现款与往代选购示例，排除越野跑；不是销量 Top 50。使用时重新核验，勿当成固定推荐。",
+  "method_url": "https://runrepeat.com/testing-methodology",
+  "notes": [
+    "旧版 HA 未换算成 AC；缺失参数保留为空。",
+    "示例核验日期为 2026-09-20；价格、现售状态与后续测评可能变化。"
+  ],
+  "groups": [
+    {
+      "id": "daily",
+      "name": "日常缓震与轻松跑",
+      "basis": "通勤兼慢跑：舒适、透气和适配优先。",
+      "top3": [
+        {
+          "shoe_id": "hoka-1",
+          "reason": "柔软透气，通勤兼慢跑",
+          "tradeoff": "回弹偏低、鞋头收窄",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-clifton-11"
+          ]
+        },
+        {
+          "shoe_id": "hoka-5",
+          "reason": "厚底缓震，慢跑长走",
+          "tradeoff": "偏重、标准楦较窄",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-bondi-9"
+          ]
+        },
+        {
+          "shoe_id": "hoka-9",
+          "reason": "耐用抓地，累积跑量",
+          "tradeoff": "弯折偏硬、长走非强项",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-skyflow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stability",
+      "name": "稳定支撑",
+      "basis": "稳定底座与支撑感优先。",
+      "top3": [
+        {
+          "shoe_id": "hoka-16",
+          "reason": "底座稳，前掌空间友好",
+          "tradeoff": "回弹低、吸震一般",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-gaviota-6"
+          ]
+        },
+        {
+          "shoe_id": "hoka-13",
+          "reason": "支撑不僵硬，耐用抓地",
+          "tradeoff": "比上一代重、回弹低",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-arahi-9"
+          ]
+        },
+        {
+          "shoe_id": "hoka-14",
+          "reason": "较轻的稳定日训选择",
+          "tradeoff": "往代、透气弱",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-arahi-8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tempo",
+      "name": "速度训练",
+      "basis": "日常训练兼提速的通用性优先。",
+      "top3": [
+        {
+          "shoe_id": "hoka-18",
+          "reason": "轻快透气，日常兼提速",
+          "tradeoff": "楦型偏紧、脚感不软",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-mach-7"
+          ]
+        },
+        {
+          "shoe_id": "hoka-19",
+          "reason": "轻量多面，往代备选",
+          "tradeoff": "鞋头窄、鞋舌薄",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-mach-6"
+          ]
+        },
+        {
+          "shoe_id": "hoka-21",
+          "reason": "厚底滚动，长距离节奏跑",
+          "tradeoff": "鞋楦很紧、鞋舌欠佳",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-mach-x-3"
+          ]
+        }
+      ],
+      "ranking_note": "长距离节奏训练可优先试 Mach X 3。"
+    },
+    {
+      "id": "race",
+      "name": "公路竞赛",
+      "basis": "大众跑者的综合适配、稳定与耐用优先。",
+      "top3": [
+        {
+          "shoe_id": "hoka-24",
+          "reason": "竞赛鞋中较稳、耐用",
+          "tradeoff": "不够轻、鞋头偏窄",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-rocket-x-3"
+          ]
+        },
+        {
+          "shoe_id": "hoka-26",
+          "reason": "更轻强滚动，适合激进脚感",
+          "tradeoff": "很紧、耐用性弱",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-cielo-x-1-3-0"
+          ]
+        },
+        {
+          "shoe_id": "hoka-27",
+          "reason": "高回弹透气，往代竞速",
+          "tradeoff": "滚动激进、楦型窄",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-cielo-x-1-2-0"
+          ]
+        }
+      ],
+      "ranking_note": "推荐顺序不等于绝对速度排名。"
+    },
+    {
+      "id": "city",
+      "name": "城市通勤与轻运动",
+      "basis": "步行舒适、抓地、耐用优先。",
+      "top3": [
+        {
+          "shoe_id": "hoka-33",
+          "reason": "耐磨抓地，通勤长走",
+          "tradeoff": "透气弱，热天慎选",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-transport-2"
+          ]
+        },
+        {
+          "shoe_id": "hoka-36",
+          "reason": "生活方式穿搭，包裹耐用",
+          "tradeoff": "偏重、透气一般",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-clifton-ls"
+          ]
+        },
+        {
+          "shoe_id": "hoka-30",
+          "reason": "通勤兼轻健身，抓地稳",
+          "tradeoff": "不适合宽脚、外露泡棉易磨",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-kawana-3"
+          ]
+        }
+      ],
+      "ranking_note": "工作防滑需求可单独考虑 Bondi SR。"
+    },
+    {
+      "id": "hiking",
+      "name": "徒步专区",
+      "basis": "普通一日徒步；不含越野跑。",
+      "top3": [
+        {
+          "shoe_id": "hoka-39",
+          "reason": "均衡缓震抓地，一日徒步",
+          "tradeoff": "网布耐磨有限",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-anacapa-2-low-gtx"
+          ]
+        },
+        {
+          "shoe_id": "hoka-41",
+          "reason": "支撑耐用，长路线与负重",
+          "tradeoff": "偏重、闷热",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-kaha-3-low-gtx"
+          ]
+        },
+        {
+          "shoe_id": "hoka-44",
+          "reason": "较轻防水靴，城市到轻徒步",
+          "tradeoff": "鞋头窄、内衬耐磨有限",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-transport-hike-gtx"
+          ]
+        }
+      ],
+      "ranking_note": "负重支撑优先时，Kaha 3 Low GTX 可排第一。"
+    },
+    {
+      "id": "recovery",
+      "name": "运动后与休闲恢复",
+      "basis": "按穿用便利排序，非恢复疗效排名。",
+      "top3": [
+        {
+          "shoe_id": "hoka-49",
+          "reason": "套脚方便，运动后与居家",
+          "tradeoff": "非跑鞋，缺同口径实测",
+          "evidence_urls": [
+            "https://www.hoka.com/en/us/all-gender-footwear/ora-recovery-slide-3/1135061.html"
+          ]
+        },
+        {
+          "shoe_id": "hoka-50",
+          "reason": "喜欢夹趾款式时的备选",
+          "tradeoff": "夹趾体验因人而异，缺同口径实测",
+          "evidence_urls": [
+            "https://www.hoka.com/en/us/mens-sandals/ora-recovery-flip/1099675.html"
+          ]
+        },
+        {
+          "shoe_id": "hoka-38",
+          "reason": "想要包头式休闲鞋时考虑",
+          "tradeoff": "偏闷、外露泡棉易磨",
+          "evidence_urls": [
+            "https://runrepeat.com/hoka-restore-tc"
+          ]
+        }
+      ],
+      "ranking_note": "Restore TC 从原通勤组移入本组；两款 ORA 缺少同口径实测。"
+    }
+  ],
+  "shoes": [
+    {
+      "id": "hoka-1",
+      "brand": "HOKA",
+      "model": "Clifton 11",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 266,
+        "softness_ac": 31.1,
+        "shock_sa": 146,
+        "return_pct": 46.8,
+        "forefoot_mm": 29.7,
+        "heel_mm": 41.4,
+        "drop_mm": 11.7
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-clifton-11"
+        }
+      ],
+      "use": "柔软慢跑 · 回弹偏低",
+      "note": ""
+    },
+    {
+      "id": "hoka-2",
+      "brand": "HOKA",
+      "model": "Clifton PRO",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 143,
+        "return_pct": 53.6,
+        "heel_mm": 43.2,
+        "forefoot_mm": 32.8,
+        "drop_mm": 10.4,
+        "softness_ac": 37,
+        "weight_g": 264
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-clifton-pro"
+        }
+      ],
+      "use": "日常训练 · 看重鞋面",
+      "note": ""
+    },
+    {
+      "id": "hoka-3",
+      "brand": "HOKA",
+      "model": "Clifton 10",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 147,
+        "return_pct": 52.3,
+        "heel_mm": 44.4,
+        "forefoot_mm": 32,
+        "drop_mm": 12.4,
+        "softness_ac": 34.2,
+        "weight_g": 275
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-clifton-10"
+        }
+      ],
+      "use": "往代 · 厚底慢跑",
+      "note": ""
+    },
+    {
+      "id": "hoka-4",
+      "brand": "HOKA",
+      "model": "Clifton 9",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 127,
+        "return_pct": 53,
+        "heel_mm": 32.7,
+        "forefoot_mm": 26.6,
+        "drop_mm": 6.1,
+        "softness_ac": 40.5,
+        "weight_g": 249
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-clifton-9"
+        }
+      ],
+      "use": "往代 · 日常慢跑",
+      "note": ""
+    },
+    {
+      "id": "hoka-5",
+      "brand": "HOKA",
+      "model": "Bondi 9",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 303,
+        "softness_ac": 43,
+        "shock_sa": 146,
+        "return_pct": 60.2,
+        "forefoot_mm": 32.2,
+        "heel_mm": 41.3,
+        "drop_mm": 9.1
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-bondi-9"
+        }
+      ],
+      "use": "厚底缓震 · 较有分量",
+      "note": "分项回弹组件出现 60.3%，本表采用明确标注 Energy return heel 的汇总值 60.2%。"
+    },
+    {
+      "id": "hoka-6",
+      "brand": "HOKA",
+      "model": "Bondi 8",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 125,
+        "return_pct": 51,
+        "heel_mm": 36.2,
+        "forefoot_mm": 30,
+        "drop_mm": 6.2,
+        "softness_ac": 41.5,
+        "weight_g": 311
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-bondi-8"
+        }
+      ],
+      "use": "往代 · 缓震慢跑",
+      "note": ""
+    },
+    {
+      "id": "hoka-7",
+      "brand": "HOKA",
+      "model": "Rincon 4",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 134,
+        "return_pct": 56.4,
+        "heel_mm": 36,
+        "forefoot_mm": 26.6,
+        "drop_mm": 9.4,
+        "softness_ac": 35.9,
+        "weight_g": 231
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-rincon-4"
+        }
+      ],
+      "use": "轻量日常 · 留意耐磨",
+      "note": ""
+    },
+    {
+      "id": "hoka-8",
+      "brand": "HOKA",
+      "model": "Rincon 3",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 121,
+        "return_pct": 47,
+        "heel_mm": 31.8,
+        "forefoot_mm": 25.6,
+        "drop_mm": 6.2,
+        "softness_ac": null,
+        "weight_g": 208
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-rincon-3"
+        }
+      ],
+      "use": "往代 · 轻量慢跑",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-9",
+      "brand": "HOKA",
+      "model": "Skyflow",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 133,
+        "return_pct": 58.1,
+        "heel_mm": 39.3,
+        "forefoot_mm": 30.6,
+        "drop_mm": 8.7,
+        "softness_ac": 40,
+        "weight_g": 282
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-skyflow"
+        }
+      ],
+      "use": "日常跑量 · 均衡取向",
+      "note": ""
+    },
+    {
+      "id": "hoka-10",
+      "brand": "HOKA",
+      "model": "Skyward X 2",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 152,
+        "return_pct": 64.3,
+        "heel_mm": 45.8,
+        "forefoot_mm": 38.2,
+        "drop_mm": 7.6,
+        "softness_ac": 31.9,
+        "weight_g": 286
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-skyward-x-2"
+        }
+      ],
+      "use": "厚底训练 · 脚下厚实",
+      "note": ""
+    },
+    {
+      "id": "hoka-11",
+      "brand": "HOKA",
+      "model": "Skyward X",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 136,
+        "return_pct": 66.2,
+        "heel_mm": 46.3,
+        "forefoot_mm": 37.1,
+        "drop_mm": 9.2,
+        "softness_ac": 36.5,
+        "weight_g": 315
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-skyward-x"
+        }
+      ],
+      "use": "往代 · 厚底训练",
+      "note": ""
+    },
+    {
+      "id": "hoka-12",
+      "brand": "HOKA",
+      "model": "Clifton 9 GTX",
+      "group_id": "daily",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 115,
+        "return_pct": 50.8,
+        "heel_mm": 37.2,
+        "forefoot_mm": 28.6,
+        "drop_mm": 8.6,
+        "softness_ac": null,
+        "weight_g": 271
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-clifton-9-gtx"
+        }
+      ],
+      "use": "防水路跑 · 往代",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-13",
+      "brand": "HOKA",
+      "model": "Arahi 9",
+      "group_id": "stability",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 138,
+        "return_pct": 47,
+        "heel_mm": 38,
+        "forefoot_mm": 27.7,
+        "drop_mm": 10.3,
+        "softness_ac": 32.9,
+        "weight_g": 278
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-arahi-9"
+        }
+      ],
+      "use": "稳定日训",
+      "note": ""
+    },
+    {
+      "id": "hoka-14",
+      "brand": "HOKA",
+      "model": "Arahi 8",
+      "group_id": "stability",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 138,
+        "return_pct": 54.4,
+        "heel_mm": 39.4,
+        "forefoot_mm": 28.1,
+        "drop_mm": 11.3,
+        "softness_ac": 35.8,
+        "weight_g": 259
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-arahi-8"
+        }
+      ],
+      "use": "往代 · 稳定日训",
+      "note": ""
+    },
+    {
+      "id": "hoka-15",
+      "brand": "HOKA",
+      "model": "Arahi 7",
+      "group_id": "stability",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 106,
+        "return_pct": 52.2,
+        "heel_mm": 34.2,
+        "forefoot_mm": 27.9,
+        "drop_mm": 6.3,
+        "softness_ac": null,
+        "weight_g": 266
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-arahi-7"
+        }
+      ],
+      "use": "往代 · 稳定日训",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-16",
+      "brand": "HOKA",
+      "model": "Gaviota 6",
+      "group_id": "stability",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 283,
+        "softness_ac": 32.6,
+        "shock_sa": 122,
+        "return_pct": 45.4,
+        "forefoot_mm": 28.7,
+        "heel_mm": 36,
+        "drop_mm": 7.3
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-gaviota-6"
+        }
+      ],
+      "use": "稳定支撑 · 底座宽",
+      "note": ""
+    },
+    {
+      "id": "hoka-17",
+      "brand": "HOKA",
+      "model": "Gaviota 5",
+      "group_id": "stability",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 116,
+        "return_pct": 48.9,
+        "heel_mm": 34.9,
+        "forefoot_mm": 32.7,
+        "drop_mm": 2.2,
+        "softness_ac": 36.6,
+        "weight_g": 299
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-gaviota-5"
+        }
+      ],
+      "use": "往代 · 稳定支撑",
+      "note": ""
+    },
+    {
+      "id": "hoka-18",
+      "brand": "HOKA",
+      "model": "Mach 7",
+      "group_id": "tempo",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 224,
+        "softness_ac": 41.7,
+        "shock_sa": 137,
+        "return_pct": 60.6,
+        "forefoot_mm": 26.2,
+        "heel_mm": 35.6,
+        "drop_mm": 9.4
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-mach-7"
+        }
+      ],
+      "use": "轻快日训 · 楦型偏紧",
+      "note": ""
+    },
+    {
+      "id": "hoka-19",
+      "brand": "HOKA",
+      "model": "Mach 6",
+      "group_id": "tempo",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 135,
+        "return_pct": 65.4,
+        "heel_mm": 36,
+        "forefoot_mm": 26.4,
+        "drop_mm": 9.6,
+        "softness_ac": 39.5,
+        "weight_g": 232
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-mach-6"
+        }
+      ],
+      "use": "往代 · 轻快日训",
+      "note": ""
+    },
+    {
+      "id": "hoka-20",
+      "brand": "HOKA",
+      "model": "Mach 5",
+      "group_id": "tempo",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 139,
+        "return_pct": 64.5,
+        "heel_mm": 30.7,
+        "forefoot_mm": 25,
+        "drop_mm": 5.7,
+        "softness_ac": null,
+        "weight_g": 225
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-mach-5"
+        }
+      ],
+      "use": "往代 · 轻量训练",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-21",
+      "brand": "HOKA",
+      "model": "Mach X 3",
+      "group_id": "tempo",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 151,
+        "return_pct": 58.9,
+        "heel_mm": 42.9,
+        "forefoot_mm": 33.4,
+        "drop_mm": 9.5,
+        "softness_ac": 32.5,
+        "weight_g": 264
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-mach-x-3"
+        }
+      ],
+      "use": "速度训练",
+      "note": ""
+    },
+    {
+      "id": "hoka-22",
+      "brand": "HOKA",
+      "model": "Mach X 2",
+      "group_id": "tempo",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 149,
+        "return_pct": 61.4,
+        "heel_mm": 44.6,
+        "forefoot_mm": 33.7,
+        "drop_mm": 10.9,
+        "softness_ac": 30.2,
+        "weight_g": 247
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-mach-x-2"
+        }
+      ],
+      "use": "往代 · 速度训练",
+      "note": ""
+    },
+    {
+      "id": "hoka-23",
+      "brand": "HOKA",
+      "model": "Mach X",
+      "group_id": "tempo",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 132,
+        "return_pct": 60.7,
+        "heel_mm": 38,
+        "forefoot_mm": 28.4,
+        "drop_mm": 9.6,
+        "softness_ac": null,
+        "weight_g": 259
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-mach-x"
+        }
+      ],
+      "use": "往代 · 速度训练",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-24",
+      "brand": "HOKA",
+      "model": "Rocket X 3",
+      "group_id": "race",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 155,
+        "return_pct": 73.9,
+        "heel_mm": 39.6,
+        "forefoot_mm": 29.6,
+        "drop_mm": 10,
+        "softness_ac": 34.3,
+        "weight_g": 220
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-rocket-x-3"
+        }
+      ],
+      "use": "公路竞赛",
+      "note": ""
+    },
+    {
+      "id": "hoka-25",
+      "brand": "HOKA",
+      "model": "Rocket X 2",
+      "group_id": "race",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 141,
+        "return_pct": 74.2,
+        "heel_mm": 37.7,
+        "forefoot_mm": 31.1,
+        "drop_mm": 6.6,
+        "softness_ac": null,
+        "weight_g": 218
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-rocket-x-2"
+        }
+      ],
+      "use": "往代 · 公路竞赛",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-26",
+      "brand": "HOKA",
+      "model": "Cielo X1 3.0",
+      "group_id": "race",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 170,
+        "return_pct": 75.3,
+        "heel_mm": 44.5,
+        "forefoot_mm": 31.1,
+        "drop_mm": 13.4,
+        "softness_ac": 32.9,
+        "weight_g": 193
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-cielo-x-1-3-0"
+        }
+      ],
+      "use": "公路竞赛 · 滚动激进",
+      "note": ""
+    },
+    {
+      "id": "hoka-27",
+      "brand": "HOKA",
+      "model": "Cielo X1 2.0",
+      "group_id": "race",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 160,
+        "return_pct": 75.9,
+        "heel_mm": 38.8,
+        "forefoot_mm": 28.1,
+        "drop_mm": 10.7,
+        "softness_ac": 37.2,
+        "weight_g": 208
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-cielo-x-1-2-0"
+        }
+      ],
+      "use": "往代 · 公路竞赛",
+      "note": ""
+    },
+    {
+      "id": "hoka-28",
+      "brand": "HOKA",
+      "model": "Cielo X1",
+      "group_id": "race",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 147,
+        "return_pct": 74.4,
+        "heel_mm": 39.8,
+        "forefoot_mm": 30.3,
+        "drop_mm": 9.5,
+        "softness_ac": null,
+        "weight_g": 249
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-cielo-x1"
+        }
+      ],
+      "use": "往代 · 公路竞赛",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-29",
+      "brand": "HOKA",
+      "model": "Carbon X 3",
+      "group_id": "race",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 118,
+        "return_pct": 56.6,
+        "heel_mm": 35,
+        "forefoot_mm": 24,
+        "drop_mm": 11,
+        "softness_ac": null,
+        "weight_g": 239
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-carbon-x-3"
+        }
+      ],
+      "use": "往代 · 长距离路跑",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-30",
+      "brand": "HOKA",
+      "model": "Kawana 3",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 117,
+        "return_pct": 53.4,
+        "heel_mm": 33.5,
+        "forefoot_mm": 29.9,
+        "drop_mm": 3.6,
+        "softness_ac": 44,
+        "weight_g": 298
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-kawana-3"
+        }
+      ],
+      "use": "城市步行",
+      "note": ""
+    },
+    {
+      "id": "hoka-31",
+      "brand": "HOKA",
+      "model": "Kawana 2",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 121,
+        "return_pct": 54.7,
+        "heel_mm": 33.2,
+        "forefoot_mm": 28,
+        "drop_mm": 5.2,
+        "softness_ac": null,
+        "weight_g": 298
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-kawana-2"
+        }
+      ],
+      "use": "往代 · 综合训练",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-32",
+      "brand": "HOKA",
+      "model": "Solimar",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 116,
+        "return_pct": 53.6,
+        "heel_mm": 30.4,
+        "forefoot_mm": 24,
+        "drop_mm": 6.4,
+        "softness_ac": null,
+        "weight_g": 232
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-solimar"
+        }
+      ],
+      "use": "轻量日常训练",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-33",
+      "brand": "HOKA",
+      "model": "Transport 2",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 298,
+        "softness_ac": 34.1,
+        "shock_sa": 124,
+        "return_pct": 61.6,
+        "forefoot_mm": 26.8,
+        "heel_mm": 38,
+        "drop_mm": 11.2
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-transport-2"
+        }
+      ],
+      "use": "耐磨通勤 · 透气弱",
+      "note": "步行鞋类别；不可凭较高回弹就判断跑步表现优于跑鞋。"
+    },
+    {
+      "id": "hoka-34",
+      "brand": "HOKA",
+      "model": "Transport",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 116,
+        "return_pct": 45.3,
+        "heel_mm": 34.1,
+        "forefoot_mm": 26.1,
+        "drop_mm": 8,
+        "softness_ac": 40.9,
+        "weight_g": 309
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-transport"
+        }
+      ],
+      "use": "往代 · 城市通勤",
+      "note": ""
+    },
+    {
+      "id": "hoka-35",
+      "brand": "HOKA",
+      "model": "Transport GTX",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 330,
+        "softness_ac": 40.9,
+        "shock_sa": 105,
+        "return_pct": 47.1,
+        "forefoot_mm": 25.1,
+        "heel_mm": 34.8,
+        "drop_mm": 9.7
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-transport-gtx"
+        }
+      ],
+      "use": "防水通勤 · 偏闷",
+      "note": "此为 Transport GTX，不是 Transport 2 或 Transport 2 GTX。"
+    },
+    {
+      "id": "hoka-36",
+      "brand": "HOKA",
+      "model": "Clifton LS",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 128,
+        "return_pct": 48.5,
+        "heel_mm": 35.2,
+        "forefoot_mm": 27,
+        "drop_mm": 8.2,
+        "softness_ac": null,
+        "weight_g": 305
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-clifton-ls"
+        }
+      ],
+      "use": "生活方式 · 城市步行",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-37",
+      "brand": "HOKA",
+      "model": "Bondi SR",
+      "group_id": "city",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "weight_g": 404,
+        "softness_ac": 42.1,
+        "shock_sa": 111,
+        "return_pct": 47.1,
+        "forefoot_mm": 31.2,
+        "heel_mm": 39.4,
+        "drop_mm": 8.2
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-bondi-sr"
+        }
+      ],
+      "use": "工作防滑 · 较重",
+      "note": "SR 为工作防滑版本，不是 Bondi 9 的同款替代；防泼水不等于防水。"
+    },
+    {
+      "id": "hoka-38",
+      "brand": "HOKA",
+      "model": "Restore TC",
+      "group_id": "recovery",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 111,
+        "return_pct": 55.1,
+        "heel_mm": 32.7,
+        "forefoot_mm": 25.2,
+        "drop_mm": 7.5,
+        "softness_ac": null,
+        "weight_g": 313
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-restore-tc"
+        }
+      ],
+      "use": "休闲穿脱",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-39",
+      "brand": "HOKA",
+      "model": "Anacapa 2 Low GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 118,
+        "return_pct": 46.8,
+        "heel_mm": 36,
+        "forefoot_mm": 24,
+        "drop_mm": 12,
+        "softness_ac": 43.2,
+        "weight_g": 400
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-anacapa-2-low-gtx"
+        }
+      ],
+      "use": "低帮防水徒步",
+      "note": ""
+    },
+    {
+      "id": "hoka-40",
+      "brand": "HOKA",
+      "model": "Kaha 2 Low GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 102,
+        "return_pct": 41.8,
+        "heel_mm": 38,
+        "forefoot_mm": 29.5,
+        "drop_mm": 8.5,
+        "softness_ac": 38,
+        "weight_g": 476
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-kaha-2-low-gtx"
+        }
+      ],
+      "use": "往代 · 低帮防水徒步",
+      "note": ""
+    },
+    {
+      "id": "hoka-41",
+      "brand": "HOKA",
+      "model": "Kaha 3 Low GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 116,
+        "return_pct": 46.3,
+        "heel_mm": 40.5,
+        "forefoot_mm": 28.4,
+        "drop_mm": 12.1,
+        "softness_ac": 37.7,
+        "weight_g": 465
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-kaha-3-low-gtx"
+        }
+      ],
+      "use": "低帮防水徒步",
+      "note": ""
+    },
+    {
+      "id": "hoka-42",
+      "brand": "HOKA",
+      "model": "Skyline-Float X",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": null,
+        "return_pct": null,
+        "heel_mm": 39,
+        "forefoot_mm": 31,
+        "drop_mm": 8,
+        "softness_ac": null,
+        "weight_g": 410
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-skyline-float-x"
+        }
+      ],
+      "use": "低帮徒步",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-43",
+      "brand": "HOKA",
+      "model": "Kaha 3 GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 120,
+        "return_pct": 49.5,
+        "heel_mm": 41.9,
+        "forefoot_mm": 30.4,
+        "drop_mm": 11.5,
+        "softness_ac": 35.6,
+        "weight_g": 550
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-kaha-3-gtx"
+        }
+      ],
+      "use": "防水徒步靴",
+      "note": ""
+    },
+    {
+      "id": "hoka-44",
+      "brand": "HOKA",
+      "model": "Transport Hike GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 114,
+        "return_pct": 52.3,
+        "heel_mm": 35.6,
+        "forefoot_mm": 27.8,
+        "drop_mm": 7.8,
+        "softness_ac": 36.6,
+        "weight_g": 383
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-transport-hike-gtx"
+        }
+      ],
+      "use": "防水徒步靴",
+      "note": ""
+    },
+    {
+      "id": "hoka-45",
+      "brand": "HOKA",
+      "model": "Anacapa Mid GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": null,
+        "return_pct": null,
+        "heel_mm": 36.7,
+        "forefoot_mm": 26.1,
+        "drop_mm": 10.6,
+        "softness_ac": null,
+        "weight_g": 436
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-anacapa-mid-gtx"
+        }
+      ],
+      "use": "往代 · 防水徒步靴",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-46",
+      "brand": "HOKA",
+      "model": "Anacapa 2 Mid GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 118,
+        "return_pct": 45.1,
+        "heel_mm": 34.4,
+        "forefoot_mm": 25.4,
+        "drop_mm": 9,
+        "softness_ac": 49.5,
+        "weight_g": 494
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-anacapa-2-mid-gtx"
+        }
+      ],
+      "use": "防水徒步靴",
+      "note": ""
+    },
+    {
+      "id": "hoka-47",
+      "brand": "HOKA",
+      "model": "Kaha 2 GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 114,
+        "return_pct": 38.5,
+        "heel_mm": 39.3,
+        "forefoot_mm": 28.1,
+        "drop_mm": 11.2,
+        "softness_ac": 37.7,
+        "weight_g": 525
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-kaha-2-gtx"
+        }
+      ],
+      "use": "往代 · 防水徒步靴",
+      "note": ""
+    },
+    {
+      "id": "hoka-48",
+      "brand": "HOKA",
+      "model": "Trail Code GTX",
+      "group_id": "hiking",
+      "sample": "Men US9",
+      "protocol": "RunRepeat_M-US9_AC-room_heel-SA-ER",
+      "metrics": {
+        "shock_sa": 120,
+        "return_pct": 47,
+        "heel_mm": 36.9,
+        "forefoot_mm": 25.7,
+        "drop_mm": 11.2,
+        "softness_ac": null,
+        "weight_g": 440
+      },
+      "sources": [
+        {
+          "label": "RunRepeat 原始测评",
+          "url": "https://runrepeat.com/hoka-trail-code-gtx"
+        }
+      ],
+      "use": "防水徒步靴",
+      "note": "未读取到同口径 Asker C 结果，保留为空。"
+    },
+    {
+      "id": "hoka-49",
+      "brand": "HOKA",
+      "model": "ORA Recovery Slide 3",
+      "group_id": "recovery",
+      "sample": "unknown",
+      "protocol": "unknown",
+      "metrics": {
+        "weight_g": null,
+        "softness_ac": null,
+        "shock_sa": null,
+        "return_pct": null,
+        "forefoot_mm": null,
+        "heel_mm": null,
+        "drop_mm": null
+      },
+      "sources": [
+        {
+          "label": "HOKA 官方型号与用途",
+          "url": "https://www.hoka.com/en/us/all-gender-footwear/ora-recovery-slide-3/1135061.html"
+        }
+      ],
+      "use": "恢复拖鞋 · 非跑鞋",
+      "note": "已核验官方型号及恢复用途；未查到同口径实验室数据，官方重量和坡差不混入实测列。"
+    },
+    {
+      "id": "hoka-50",
+      "brand": "HOKA",
+      "model": "ORA Recovery Flip",
+      "group_id": "recovery",
+      "sample": "unknown",
+      "protocol": "unknown",
+      "metrics": {
+        "weight_g": null,
+        "softness_ac": null,
+        "shock_sa": null,
+        "return_pct": null,
+        "forefoot_mm": null,
+        "heel_mm": null,
+        "drop_mm": null
+      },
+      "sources": [
+        {
+          "label": "HOKA 官方型号与用途",
+          "url": "https://www.hoka.com/en/us/mens-sandals/ora-recovery-flip/1099675.html"
+        }
+      ],
+      "use": "恢复人字拖 · 非跑鞋",
+      "note": "已核验官方型号及恢复用途；未查到同口径实验室数据，官方重量和坡差不混入实测列。"
+    }
+  ]
+}

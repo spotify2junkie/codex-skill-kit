@@ -70,3 +70,13 @@ codex plugin add lark-work@personal
 [来源记录](sources.json)、[P-Stack 本机改动清单](docs/local-pstack-changes.json)、[验证记录](docs/verification.md)。P-Stack 和飞书保留各自 MIT 许可与声明。个人阅读 skills 是当前快照，未额外授予开源许可。
 
 仓库不包含 Codex/飞书/GitHub 凭据、聊天记录、公司数据、旧笔记或 `node_modules`。安装只注册本仓库插件，不替换全局 `AGENTS.md`，不固定模型，不创建自动化。
+
+## 鞋款双图 skill（独立安装）
+
+新增 [shoe-comparison](skills/shoe-comparison/SKILL.md)：支持任意品牌和数量，默认产出完整鞋款对比图与各用途分组 Top 3 推荐图，并保留原始来源、推荐理由和取舍。
+
+**Credit to SOLE鞋履** — 参数决策卡与表达方式的灵感来源；数据核验与推荐独立整理。
+
+[使用说明与双图预览](docs/shoe-comparison.md) · [HOKA 50 款示例](examples/shoe-comparison/hoka-50/guide.json)
+
+这是独立 skill，不改变上面的插件安装组合；可将整个 `skills/shoe-comparison` 目录安装到自己的 skill 目录。
