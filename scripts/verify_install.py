@@ -8,7 +8,7 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 4, 'skill-maintenance': 1}
+COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 5, 'skill-maintenance': 1}
 
 
 def run(args, env, cwd=None):
@@ -58,6 +58,8 @@ def main():
         note = temporary / 'note.md'
         note.write_text('# Paper\n\n## 01. Example\n\nSource: https://example.com/paper\n')
         verifier = installed['reading-notes'] / 'skills/obsidian-paper-note/scripts/verify_note_bundle.py'
+        radar = installed['reading-notes'] / 'skills/reading-radar/SKILL.md'
+        assert radar.is_file() and 'name: reading-radar' in radar.read_text(encoding='utf-8')
         verify_cmd = ['python3', str(verifier), '--note', str(note), '--vault-root', str(temporary), '--expected-articles', '1', '--expected-pdfs', '0']
         assert json.loads(run(verify_cmd, env))['status'] == 'PASS'
         note.write_text(note.read_text() + '\n![[missing.png]]\n')
@@ -82,6 +84,7 @@ def main():
                           'installed_files_match_source': True,
                           'agent_template_install_and_repeat': 'PASS',
                           'reading_verifier_valid_note_and_missing_embed': 'PASS',
+                          'reading_radar_packaged': 'PASS',
                           'onv_doctor_and_vault_boundary': 'PASS',
                           'onv_pdf_tools_available': have_pdf_tools,
                           'runtime_skill_discovery': 'Requires a new Codex task; not exercised',

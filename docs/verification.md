@@ -38,3 +38,14 @@ python3 scripts/verify_install.py --source spotify2junkie/codex-skill-kit
 - How 对包结构做只读解释；Swarm 对实现和交付做独立复核。这是候选版本的案例验证，不是基线对照实验，也不是量化 Skill Lift。
 
 未验证自动触发、真实阅读输出生成、多次随机运行或不同模型表现；这些不能由结构校验或上述一次维护任务替代。P-Stack 源码未改，本次不重新宣称其上游完整 release suite 通过。
+
+## 2026-09-22：Reading Radar 完整工作流
+
+`reading-notes` 从 4 个 skills 更新为 5 个，新增 `reading-radar`，并同步最新版 `obsidian-paper-note` 的架构/Loss 批判性精读、批量 manifest、来源审查和逐页视觉审查契约。Poteto Mode、Swarm、Recall 与 Teach 继续由 `pstack-for-codex` 提供，没有在阅读插件中复制同名入口。
+
+- `python3 -m unittest discover -s plugins/reading-notes/skills/obsidian-paper-note/scripts -p 'test_verify_note_bundle.py'`：21 个回归测试通过。
+- `python3 scripts/verify_install.py --source .`：四个插件分别包含 45/28/5/1 个 skills；隔离安装、逐文件一致性、Reading Radar 打包、笔记验证器和 ONV vault 边界检查全部通过。
+- 插件版本更新为 `reading-notes 1.1.0+codex.20260922075602`。
+- 保留可移植边界：没有加入私人 Obsidian 路径、旧笔记、凭据、聊天记录或运行时缓存。
+
+当前结构验证不能证明未来模型一定正确触发 Skill，也不能替代真实 Top N 搜索、来源 Review、PDF 逐页查看或目标机器的运行时验证。

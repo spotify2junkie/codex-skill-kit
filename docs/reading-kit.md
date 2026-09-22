@@ -1,9 +1,10 @@
 # 完整阅读 Skill Kit
 
-阅读包包含以下四个 skills 的完整目录；脚本、agents 元数据、features 和 references 均随插件安装。
+阅读包包含以下五个 skills 的完整目录；脚本、agents 元数据、features 和 references 均随插件安装。
 
 | Skill | 作用 | 配套资源 |
 | --- | --- | --- |
+| `reading-radar` | 从 Topic 到候选池、独立 Review、Top N 冻结和制作交接 | E/F/P 评分、检索/Review ledger、Recall 与续做状态规范 |
 | `obsidian-paper-note` | 来源忠实的论文精读、批量合并、主笔记追加、风险与迁移分析 | 笔记结构、证据边界、10 页 PDF 规范、存储约定、`verify_note_bundle.py` |
 | `eli5` | 面向读者基础解释机制与代价 | 受众与类比约束 |
 | `explain-eli5` | 卡通手绘、两格漫画式 HTML 图解 | 浅/深主题、术语与图示、浏览器渲染验证约定 |
@@ -11,7 +12,7 @@
 
 ## 工作流
 
-`obsidian-paper-note` 组织内容，结合 `eli5` 与 `explain-eli5` 制作教学层；`verify_note_bundle.py` 检查笔记与附件。含 PDF 的严格精读使用 `verify-obsidian-notes` 的 doctor → verify → 查看每一页 → attest → status 流程。只有实际人工查看通过后才能得到最终视觉验收结论。
+`reading-radar` 组织搜索、去重、评分、独立 Review 和名单冻结；`obsidian-paper-note` 只对已确认的来源组织内容，结合 `eli5` 与 `explain-eli5` 制作教学层。`verify_note_bundle.py` 检查笔记、附件和版本绑定 manifest。含 PDF 的严格精读还使用 `verify-obsidian-notes` 的 doctor → verify → 查看每一页 → attest → status 流程。只有实际查看通过后才能得到最终视觉验收结论。
 
 纯 Markdown 是用户明确选择的模式，此时只运行不要求 PDF 的 bundle 验证器。不能为了通过验证器制造 PDF 或视觉证明。
 
@@ -31,7 +32,7 @@
 
 ## 安装与存储配置分开
 
-默认一起安装四个阅读 skills。安装不会读取笔记、寻找旧 vault、创建新 vault，或修改 Obsidian 配置。
+默认一起安装五个阅读 skills。安装不会读取笔记、寻找旧 vault、创建新 vault，或修改 Obsidian 配置。
 
 入职后确定载体，再把路径、主笔记命名、附件策略写进目标工作区的规则。继续用 Obsidian 时使用其 wikilinks；改为飞书等载体时保留内容与证据标准，并适配写入、附件和链接解析。ONV 当前验证的是 Obsidian 文件与 PDF，不宣称已支持其他平台。
 

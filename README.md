@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | `pstack-for-codex` | 45 个 P-Stack skills；保留本机 Poteto Mode 的调整 | 是 |
 | `lark-work` | 28 个飞书 skills：文档、知识库、多维表格、表格、消息、日历、会议、任务等 | 是 |
-| `reading-notes` | Obsidian 论文精读、ELI5 解释、漫画式图解，以及笔记/PDF 验收，共 4 个 skills | 是；存储配置稍后确定 |
+| `reading-notes` | Reading Radar Top N 搜索/Review、Obsidian 论文精读、ELI5 图解与笔记/PDF 验收，共 5 个 skills | 是；存储配置稍后确定 |
 | `skill-maintenance` | 1 个原创 Skill：冲突审计、更新、合并与行为验证 | 按需安装 |
 
 ## 发给新电脑 Codex
@@ -36,7 +36,7 @@ marketplace 名称是 `personal`，与 GitHub 仓库名不同。若已存在同�
 - 工程：`$poteto-mode 帮我修复这个问题，完成相关验证。`
 - 理解代码：`$how 解释这个请求如何经过各层。`
 - 飞书：`查看我今天的日程`、`读取这篇飞书文档并总结`，可按描述自动选择对应 skill。
-- 阅读包启用后：`$obsidian-paper-note 精读这篇论文，写到我指定的位置。`
+- 阅读包启用后：`$reading-radar 搜索这个 topic 的 Top 20，名单确认后合并制作 Obsidian 精读。`
 
 Poteto Mode 保留本机的自动发现设置；其他 P-Stack skills 保留各自原有调用策略。可选 agent profiles 不固定模型，安装插件也不会创建 Benny 自动化。
 
@@ -52,7 +52,7 @@ Poteto Mode 保留本机的自动发现设置；其他 P-Stack skills 保留各�
 codex plugin add reading-notes@personal
 ```
 
-[完整阅读包](docs/reading-kit.md)迁移阅读方法、图解风格、笔记与 PDF 验收脚本及全部配套说明。没有旧笔记、附件、私人 vault 路径、iCloud 配置或笔记应用设置。确定使用 Obsidian、飞书或其他载体后，再配置目标位置和附件策略。迁移到其他载体时需要适配写入与嵌入语法；不把 Obsidian 的 `![[...]]` 当作跨平台格式。
+[完整阅读包](docs/reading-kit.md)迁移 Topic → 候选池 → 独立 Review → Top N 冻结 → 精读制作与验收的完整方法，包含图解风格、笔记与 PDF 验收脚本及全部配套说明。没有旧笔记、附件、私人 vault 路径、iCloud 配置或笔记应用设置。确定使用 Obsidian、飞书或其他载体后，再配置目标位置和附件策略。迁移到其他载体时需要适配写入与嵌入语法；不把 Obsidian 的 `![[...]]` 当作跨平台格式。
 
 ## 更新与移除
 
