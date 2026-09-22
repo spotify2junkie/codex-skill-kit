@@ -45,6 +45,7 @@ python3 scripts/verify_install.py --source spotify2junkie/codex-skill-kit
 
 - `python3 -m unittest discover -s plugins/reading-notes/skills/obsidian-paper-note/scripts -p 'test_verify_note_bundle.py'`：21 个回归测试通过。
 - `python3 scripts/verify_install.py --source .`：四个插件分别包含 45/28/5/1 个 skills；隔离安装、逐文件一致性、Reading Radar 打包、笔记验证器和 ONV vault 边界检查全部通过。
+- 首次推送后，`python3 scripts/verify_install.py --source spotify2junkie/codex-skill-kit` 从公开 GitHub 地址重新注册 marketplace 并隔离安装，得到相同的 45/28/5/1 结果与完整 PASS。
 - 插件版本更新为 `reading-notes 1.1.0+codex.20260922075602`。
 - 保留可移植边界：没有加入私人 Obsidian 路径、旧笔记、凭据、聊天记录或运行时缓存。
 
