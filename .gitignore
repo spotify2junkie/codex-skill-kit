@@ -6,4 +6,5 @@ __pycache__/
 .env.*
 !.env.example
 work/
+artifacts/skillkit2/a/*/deliverables/review.mp4
 *.log

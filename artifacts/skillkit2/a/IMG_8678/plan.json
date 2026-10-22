@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "source_path": "$HOME/ops/tmp/badminton-cut/IMG_8678.MOV",
+  "source_duration_s": 467.126667,
+  "focus": "近侧粉色上衣球员及其搭档；只按衣着和场上位置描述，不推断身份。",
+  "reference_comparison": "对同一源视频 IMG_8678.MOV 做了候选流程的完整时段浏览，并复核入选回合附近的密集帧；同时审阅 BadmintonCoachSkill 本地快照。差异如下：\n\n- 输出类型：BadmintonCoachSkill 是证据型教学诊断 skill，没有与本候选相同的整回合剪辑器；本候选输出成片、回合时间表和复盘报告。\n- 诊断字段：参考规范要求问题、可见证据、证据边界、原因、纠正原则、练习和复测指标；本候选包含做得好/不好、原因、练习及技术/步法/战术三类带时间点结论，但没有单列复测指标。\n- 回合编辑：本候选记录发球前/死球后的实测留白、三类回合覆盖、编码和成片时长；参考项目没有对应的成片编辑门槛。\n- 对比范围：本轮未运行参考项目运行时，因此这里比较同一源视频上的工作流和报告契约，不是两份运行时输出或成片的实测对比。",
+  "segments": [
+    {
+      "id": "rally-01",
+      "category": "core_technique",
+      "start_s": 34.0,
+      "serve_contact_s": 37.0,
+      "dead_ball_s": 45.0,
+      "end_s": 46.5,
+      "verdict": "good",
+      "reason": "近侧搭档在后场起拍，粉色上衣球员守在前场并参与连续回合，能看到双打前后站位与衔接。",
+      "drill": "双打前后轮转：后场高远球、前场封网，出现平抽时并步回中，完成 6 轮后交换前后位置。",
+      "subtitle": "前后场配合清晰",
+      "experts": {
+        "technique": {
+          "at_s": 39.0,
+          "conclusion": "粉色上衣球员前场击球使用短促挥拍，拍头留在身体前方。"
+        },
+        "footwork_position": {
+          "at_s": 40.0,
+          "conclusion": "前场球员重心降低并保持面向球网，搭档留在后场覆盖。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 42.0,
+          "conclusion": "近侧组合前后分工明确，前场封挡后仍保留后场接续位置。"
+        }
+      }
+    },
+    {
+      "id": "rally-02",
+      "category": "improvable_rally",
+      "start_s": 73.0,
+      "serve_contact_s": 75.2,
+      "dead_ball_s": 84.0,
+      "end_s": 86.0,
+      "verdict": "bad",
+      "reason": "白色上衣搭档多次向前场扑救，来球连续压在前场后身体回收较慢，左右覆盖容易拉开。",
+      "drill": "双打前场两点移动：搭档在后场维持直线球，前场球员左右各做弓步拦截并回到中前场，6 组。",
+      "subtitle": "前场扑救后快速回中",
+      "experts": {
+        "technique": {
+          "at_s": 80.0,
+          "conclusion": "低位救球时上身较前倾，触球后需要用非持拍手帮助平衡。"
+        },
+        "footwork_position": {
+          "at_s": 81.0,
+          "conclusion": "白色上衣搭档跨步到前场后仍朝向侧线，回到中路的第一步偏慢。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 83.0,
+          "conclusion": "连续回放低球使搭档反复留在网前；可挑向后场中路争取回位时间。"
+        }
+      }
+    },
+    {
+      "id": "rally-03",
+      "category": "highlight_point",
+      "start_s": 266.0,
+      "serve_contact_s": 268.2,
+      "dead_ball_s": 275.0,
+      "end_s": 277.0,
+      "verdict": "good",
+      "reason": "粉色上衣球员完成前场压迫，搭档从后场及时跟进，回合以对手落地球结束。",
+      "drill": "发接后第三拍：前场截击后搭档跟进封网，若对手挑高球则回到前后进攻位，8 球一组。",
+      "subtitle": "前场压迫后搭档跟进",
+      "experts": {
+        "technique": {
+          "at_s": 270.0,
+          "conclusion": "前场球员在身体前方用短挥拍控制来球，击球后拍头迅速回到准备位置。"
+        },
+        "footwork_position": {
+          "at_s": 272.0,
+          "conclusion": "前场球员压上后，后场搭档向中前场补进，形成前后接续。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 274.0,
+          "conclusion": "继续把球压在对手前场并由搭档跟进，迫使对手以低点回应。"
+        }
+      }
+    },
+    {
+      "id": "rally-04",
+      "category": "core_technique",
+      "start_s": 357.5,
+      "serve_contact_s": 359.7,
+      "dead_ball_s": 368.0,
+      "end_s": 370.0,
+      "verdict": "good",
+      "reason": "粉色上衣球员在网前用短促动作连续处理来球，搭档保持后场覆盖，回合结束前的轮转完整可见。",
+      "drill": "网前封挡加后场补位：前场连续两次短球控制，后场搭档跟进中路，失去进攻时同步回防，6 轮。",
+      "subtitle": "网前处理后搭档跟进",
+      "experts": {
+        "technique": {
+          "at_s": 363.0,
+          "conclusion": "网前触球采用短挥拍，拍头快速回到身前，有利于接下一拍。"
+        },
+        "footwork_position": {
+          "at_s": 364.0,
+          "conclusion": "前场与后场搭档保持纵向站位，前场球员触球后没有完全离开网前。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 366.0,
+          "conclusion": "继续在前场控制线路，让后场搭档保持接续准备；注意失去进攻后同步回到防守位。"
+        }
+      }
+    }
+  ]
+}

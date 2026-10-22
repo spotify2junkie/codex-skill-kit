@@ -8,7 +8,7 @@ import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 5, 'skill-maintenance': 1}
+COUNTS = {'pstack-for-codex': 45, 'lark-work': 28, 'reading-notes': 5, 'skill-maintenance': 1, 'badminton-review': 1}
 
 
 def run(args, env, cwd=None):
@@ -47,7 +47,10 @@ def main():
         project.mkdir()
         user.mkdir()
         helper = installed['pstack-for-codex'] / 'skills/setup-pstack/scripts/manage-agents.mjs'
-        cmd = ['node', str(helper), 'install', '--scope', 'project', '--project-root', str(project), '--user-home', str(user)]
+        cmd = [
+            'node', str(helper), 'install', '--scope', 'project',
+            '--project-root', str(project), '--user-home', str(user),
+        ]
         run(cmd, env)
         before = {p.name: p.read_bytes() for p in (project / '.codex/agents').glob('*.toml')}
         assert len(before) == 2
@@ -60,7 +63,10 @@ def main():
         verifier = installed['reading-notes'] / 'skills/obsidian-paper-note/scripts/verify_note_bundle.py'
         radar = installed['reading-notes'] / 'skills/reading-radar/SKILL.md'
         assert radar.is_file() and 'name: reading-radar' in radar.read_text(encoding='utf-8')
-        verify_cmd = ['python3', str(verifier), '--note', str(note), '--vault-root', str(temporary), '--expected-articles', '1', '--expected-pdfs', '0']
+        verify_cmd = [
+            'python3', str(verifier), '--note', str(note), '--vault-root', str(temporary),
+            '--expected-articles', '1', '--expected-pdfs', '0',
+        ]
         assert json.loads(run(verify_cmd, env))['status'] == 'PASS'
         note.write_text(note.read_text() + '\n![[missing.png]]\n')
         missing = subprocess.run(verify_cmd, env=env, text=True, capture_output=True)

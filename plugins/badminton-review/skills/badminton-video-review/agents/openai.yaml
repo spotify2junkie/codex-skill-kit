@@ -1,0 +1,8 @@
+interface:
+  display_name: "Badminton Video Review"
+  short_description: "Review complete rallies with timestamped coaching notes"
+  default_prompt: "Use $badminton-video-review to review this badminton video and produce a complete-rally edit with timestamped expert findings."
+policy:
+  allow_implicit_invocation: false
+  products:
+    - "codex"

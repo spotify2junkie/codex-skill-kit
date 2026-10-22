@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "source_path": "$HOME/ops/tmp/badminton-cut/IMG_8674.MOV",
+  "source_duration_s": 423.393333,
+  "focus": "近侧粉色上衣球员及其搭档；只按衣着和场上位置描述，不推断身份。",
+  "reference_comparison": "对同一源视频 IMG_8674.MOV 做了候选流程的完整时段浏览，并复核入选回合附近的密集帧；同时审阅 BadmintonCoachSkill 本地快照。差异如下：\n\n- 输出类型：BadmintonCoachSkill 是证据型教学诊断 skill，没有与本候选相同的整回合剪辑器；本候选输出成片、回合时间表和复盘报告。\n- 诊断字段：参考规范要求问题、可见证据、证据边界、原因、纠正原则、练习和复测指标；本候选包含做得好/不好、原因、练习及技术/步法/战术三类带时间点结论，但没有单列复测指标。\n- 回合编辑：本候选记录发球前/死球后的实测留白、三类回合覆盖、编码和成片时长；参考项目没有对应的成片编辑门槛。\n- 对比范围：本轮未运行参考项目运行时，因此这里比较同一源视频上的工作流和报告契约，不是两份运行时输出或成片的实测对比。",
+  "segments": [
+    {
+      "id": "rally-01",
+      "category": "core_technique",
+      "start_s": 130.0,
+      "serve_contact_s": 135.6,
+      "dead_ball_s": 139.6,
+      "end_s": 141.0,
+      "verdict": "good",
+      "reason": "粉色上衣球员在前场以紧凑拍面完成拦截，随后对手回球落地，动作和结果均可见。",
+      "drill": "两人半场网前平抽与挡放交替，每次触球后回到网前准备位，连续 8 球不抬高重心。",
+      "subtitle": "网前拦截动作紧凑",
+      "experts": {
+        "technique": {
+          "at_s": 137.0,
+          "conclusion": "前场触球时拍头保持在身前，挥拍幅度小，拦截动作连贯。"
+        },
+        "footwork_position": {
+          "at_s": 138.0,
+          "conclusion": "向前移动后仍能在下一拍前站稳；可练习触球后的回位步。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 139.0,
+          "conclusion": "前场把球压回对手身前，延续网前压力；可观察对手挑球后的空档。"
+        }
+      }
+    },
+    {
+      "id": "rally-02",
+      "category": "improvable_rally",
+      "start_s": 218.5,
+      "serve_contact_s": 221.9,
+      "dead_ball_s": 227.6,
+      "end_s": 229.0,
+      "verdict": "bad",
+      "reason": "粉色上衣球员在前场向下处理来球后重心偏低，回合结束时仍需弯身处理落地球，连续移动和回位可改进。",
+      "drill": "前场两点启动：教练交替喂左右网前球，完成弓步触球后用两步回到中前场准备位，左右各 6 次。",
+      "subtitle": "网前触球后及时回位",
+      "experts": {
+        "technique": {
+          "at_s": 225.0,
+          "conclusion": "网前触球点低，拍面处理较被动；练习在身体前方更早迎球。"
+        },
+        "footwork_position": {
+          "at_s": 226.5,
+          "conclusion": "前场弓步后回收慢，重心未及时回到双脚之间；下一拍前仍需继续前探。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 227.0,
+          "conclusion": "来球压到前场后继续低点处理，留给搭档的后场覆盖空间有限；可用挑球争取重整。"
+        }
+      }
+    },
+    {
+      "id": "rally-03",
+      "category": "highlight_point",
+      "start_s": 309.5,
+      "serve_contact_s": 312.6,
+      "dead_ball_s": 319.5,
+      "end_s": 321.0,
+      "verdict": "good",
+      "reason": "近侧两名球员连续覆盖前后场，后场球员完成高点击球，随后该回合结束，体现前后分工。",
+      "drill": "双打前后轮转练习：前场轻挡、后场高点击球，击球后互换前后位，完成 6 组。",
+      "subtitle": "前后场轮转衔接",
+      "experts": {
+        "technique": {
+          "at_s": 316.5,
+          "conclusion": "后场球员高点击球时手臂充分上举，击球后继续随挥，动作路径清楚。"
+        },
+        "footwork_position": {
+          "at_s": 317.5,
+          "conclusion": "前场球员留在中前场，搭档处于后场击球区域，覆盖层次分明。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 319.0,
+          "conclusion": "后场进攻与前场封网形成连续压迫，近侧组合保留了前后场分工。"
+        }
+      }
+    },
+    {
+      "id": "rally-04",
+      "category": "improvable_rally",
+      "start_s": 354.0,
+      "serve_contact_s": 357.8,
+      "dead_ball_s": 368.0,
+      "end_s": 371.0,
+      "verdict": "bad",
+      "reason": "粉色上衣球员在回合末段向前救球时失衡并坐倒，落地后的身体控制和搭档补位是可改进点。",
+      "drill": "低位前场救球：从中前场分腿垫步启动，完成左右弓步后用非持拍手保持平衡并回到准备位，每侧 5 次。",
+      "subtitle": "前场救球后稳住重心",
+      "experts": {
+        "technique": {
+          "at_s": 367.0,
+          "conclusion": "低位救球后上身继续前倾，触球后的支撑不足，身体落到地面。"
+        },
+        "footwork_position": {
+          "at_s": 368.5,
+          "conclusion": "前场弓步后的后脚支撑未能及时收回，失衡后搭档才靠近补位。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 366.0,
+          "conclusion": "救球把回合继续留在网前，但回球后身体无法快速回到防守位；可优先选择较高的安全挑球。"
+        }
+      }
+    }
+  ]
+}

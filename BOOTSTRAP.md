@@ -28,9 +28,9 @@ codex plugin list --json
 
 安装时会下载完整仓库，上述三个插件均启用。不能把三个包的 skills 混拷到一个目录：P-Stack 的 `setup-pstack` 和 `setup-benny` 依赖包根目录里的 templates / automations。
 
-### 可选 Skill 管理插件
+### 可选插件
 
-仅当用户要求管理、更新或合并 skills，或明确要求完整安装四个插件时，追加 `codex plugin add skill-maintenance@personal`。它包含 1 个 `skill-maintainer`；无需外部账号或私人笔记。检查同名独立副本后安装，新任务刷新发现。默认迁移仍是上面的三个插件。使用说明见 [skill-maintenance.md](docs/skill-maintenance.md)。
+仅当用户要求管理、更新或合并 skills，或明确要求完整安装可选插件时，追加 `codex plugin add skill-maintenance@personal`。需要羽毛球视频复盘时，再单独安装 `codex plugin add badminton-review@personal`。它包含 1 个 `badminton-video-review`，渲染需要 macOS FFmpeg 的 VideoToolbox、zscale、tonemap 和 drawtext。默认迁移仍是上面的三个插件。检查同名独立副本后安装，新任务刷新发现。
 
 ## 3. 工具与身份
 
@@ -58,16 +58,17 @@ lark-cli --help
 
 ### 完整阅读包
 
-安装 `reading-notes` 内的全部 4 个 skills，详见 [reading-kit.md](docs/reading-kit.md)。检查 Python 3.10+、Poppler 的三个命令与 ImageMagick `magick`。PDF 创作和 HTML 图解还依赖目标环境的 PDF 与浏览器能力，缺项要报告。
+安装 `reading-notes` 内的全部 5 个 skills，详见 [reading-kit.md](docs/reading-kit.md)。检查 Python 3.10+、Poppler 的三个命令与 ImageMagick `magick`。PDF 创作和 HTML 图解还依赖目标环境的 PDF 与浏览器能力，缺项要报告。
 
 安装阶段不寻找或创建 vault；用户确定目标存储载体后再配置。PDF skill/工具未就绪时，按用户选择提供 Markdown 分析或补齐依赖，不伪造 PDF 产物或验证结果。可以用临时测试笔记运行 ONV doctor 验证依赖，但这不是对真实笔记的验收。
 
 ## 4. 验证和交接
 
 1. `codex plugin list --json` 中三个目标插件均已安装并启用。
-2. 使用安装命令返回的 `installedPath` 检查 P-Stack 有 45 个 SKILL.md、飞书有 28 个、阅读有 4 个；确认 P-Stack templates、automations、hooks、脚本及 Bun 锁文件，以及阅读包的两个验证脚本、ONV features 和 verification contract 存在。
+2. 使用安装命令返回的 `installedPath` 检查 P-Stack 有 45 个 SKILL.md、飞书有 28 个、阅读有 5 个；确认 P-Stack templates、automations、hooks、脚本及 Bun 锁文件，以及阅读包的两个验证脚本、ONV features 和 verification contract 存在。
 3. 可在独立临时项目和临时 user-home 中运行 `setup-pstack/scripts/manage-agents.mjs install --scope project ...`，证明模板路径正确；不写用户真实 agent profiles。
 4. 汇报已安装插件、依赖缺项和账号待配置项。安装检查不等于运行时模型/权限/工具验证。
 5. 请用户新建任务刷新 skill 索引。在新任务用 `$poteto-mode` 或 `$how` 做一个小型只读任务，确认实际发现。飞书实测等用户完成授权和给出真实查询后再做。
 
 若安装了可选 `skill-maintenance`，另外核对 installed/enabled 状态、1 个 SKILL.md 及其 agents/references 文件。
+若安装了可选 `badminton-review`，另外核对 installed/enabled 状态、1 个 SKILL.md 及其渲染脚本和 schema/quality-gate 参考文件。
