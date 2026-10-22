@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "source_path": "$HOME/ops/tmp/badminton-cut/IMG_8675.MOV",
+  "source_duration_s": 487.073333,
+  "focus": "近侧粉色上衣球员及其搭档；只按衣着和场上位置描述，不推断身份。",
+  "reference_comparison": "对同一源视频 IMG_8675.MOV 做了候选流程的完整时段浏览，并复核入选回合附近的密集帧；同时审阅 BadmintonCoachSkill 本地快照。差异如下：\n\n- 输出类型：BadmintonCoachSkill 是证据型教学诊断 skill，没有与本候选相同的整回合剪辑器；本候选输出成片、回合时间表和复盘报告。\n- 诊断字段：参考规范要求问题、可见证据、证据边界、原因、纠正原则、练习和复测指标；本候选包含做得好/不好、原因、练习及技术/步法/战术三类带时间点结论，但没有单列复测指标。\n- 回合编辑：本候选记录发球前/死球后的实测留白、三类回合覆盖、编码和成片时长；参考项目没有对应的成片编辑门槛。\n- 对比范围：本轮未运行参考项目运行时，因此这里比较同一源视频上的工作流和报告契约，不是两份运行时输出或成片的实测对比。",
+  "segments": [
+    {
+      "id": "rally-01",
+      "category": "core_technique",
+      "start_s": 70.0,
+      "serve_contact_s": 73.7,
+      "dead_ball_s": 77.6,
+      "end_s": 79.3,
+      "verdict": "good",
+      "reason": "近侧球员完成发球后的接续击球，随后迅速回到准备状态，能看到发接球后的动作衔接。",
+      "drill": "发球后连续第三拍练习：低发球、接发、回到双打防守位，重复 8 球并检查回位是否在对手触球前完成。",
+      "subtitle": "发球后快速进入准备",
+      "experts": {
+        "technique": {
+          "at_s": 75.0,
+          "conclusion": "接发动作较紧凑，拍头在身体前方，减少了大幅后摆。"
+        },
+        "footwork_position": {
+          "at_s": 76.0,
+          "conclusion": "接发后能回到中前场准备区域；脚下仍可增加一次轻分腿垫步。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 77.0,
+          "conclusion": "回球线路将对手留在网前，近侧搭档保持后场覆盖。"
+        }
+      }
+    },
+    {
+      "id": "rally-02",
+      "category": "improvable_rally",
+      "start_s": 106.5,
+      "serve_contact_s": 109.6,
+      "dead_ball_s": 117.6,
+      "end_s": 119.2,
+      "verdict": "bad",
+      "reason": "粉色上衣球员前场接球时身体前倾明显，完成低位处理后没有立刻恢复到平衡准备位。",
+      "drill": "两人网前挑放随机练习：每球触拍后先回到网前基准位，再出发接下一球，左右各 8 球。",
+      "subtitle": "低位触球后先恢复平衡",
+      "experts": {
+        "technique": {
+          "at_s": 115.0,
+          "conclusion": "低位触球时拍面在身前，但上身随手臂前探；练习降低重心而不折腰。"
+        },
+        "footwork_position": {
+          "at_s": 116.5,
+          "conclusion": "前场弓步后回位步骤不明显，双脚仍偏向来球一侧。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 117.2,
+          "conclusion": "回合中使用较低的网前球，若对手已在网前，可改用挑球争取时间。"
+        }
+      }
+    },
+    {
+      "id": "rally-03",
+      "category": "highlight_point",
+      "start_s": 228.0,
+      "serve_contact_s": 231.6,
+      "dead_ball_s": 238.0,
+      "end_s": 240.5,
+      "verdict": "good",
+      "reason": "近侧搭档在后场完成高点击球，粉色上衣球员留在前场支援，进攻回合随后结束。",
+      "drill": "前后站位进攻练习：后场连续高点击球、前场封挡，出现回球过网时前场完成截击，6 组后交换位置。",
+      "subtitle": "后场进攻接前场封网",
+      "experts": {
+        "technique": {
+          "at_s": 236.0,
+          "conclusion": "后场球员在高点击球后有完整挥拍和随挥，击球点在头部上方。"
+        },
+        "footwork_position": {
+          "at_s": 234.5,
+          "conclusion": "前场球员保持在网前区域，后场搭档留出挥拍空间，没有明显交叉抢位。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 237.5,
+          "conclusion": "持续向下压迫并由前场封住回球线路，进攻节奏连贯。"
+        }
+      }
+    },
+    {
+      "id": "rally-04",
+      "category": "improvable_rally",
+      "start_s": 352.0,
+      "serve_contact_s": 355.6,
+      "dead_ball_s": 367.0,
+      "end_s": 369.5,
+      "verdict": "bad",
+      "reason": "回合末段粉色上衣球员仍站在前场偏右；可练习触球后并步回中，及时恢复准备位。",
+      "drill": "前场触球后并步回中：交替喂直线与斜线球，击球后两步回到中线准备位，每侧 6 次。",
+      "subtitle": "前场触球后并步回中",
+      "experts": {
+        "technique": {
+          "at_s": 366.5,
+          "conclusion": "回合末段粉色上衣球员仍保持站立；触球后可将拍头及时带回身前。"
+        },
+        "footwork_position": {
+          "at_s": 367.5,
+          "conclusion": "球死时粉色上衣球员仍站在前场偏右；可在击球后并步向中线回位。"
+        },
+        "tactics_shot_selection": {
+          "at_s": 365.5,
+          "conclusion": "回合末段粉色球员仍处于前场偏右；可挑向后场为回位争取时间。"
+        }
+      }
+    }
+  ]
+}

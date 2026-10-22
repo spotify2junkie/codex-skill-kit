@@ -48,5 +48,11 @@
     ],
     "added": "2026-09-21",
     "public_references": "plugins/skill-maintenance/skills/skill-maintainer/references/sources.md"
+  },
+  "badminton_review": {
+    "source": "Original domain skill authored for codex-skill-kit issue #2",
+    "skills": ["badminton-video-review"],
+    "added": "2026-10-22",
+    "reference_project": "https://github.com/jhxu003/BadmintonCoachSkill"
   }
 }

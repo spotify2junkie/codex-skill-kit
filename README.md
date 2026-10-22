@@ -8,6 +8,7 @@
 | `lark-work` | 28 个飞书 skills：文档、知识库、多维表格、表格、消息、日历、会议、任务等 | 是 |
 | `reading-notes` | Reading Radar Top N 搜索/Review、Obsidian 论文精读、ELI5 图解与笔记/PDF 验收，共 5 个 skills | 是；存储配置稍后确定 |
 | `skill-maintenance` | 1 个原创 Skill：冲突审计、更新、合并与行为验证 | 按需安装 |
+| `badminton-review` | 完整回合剪辑、时间戳教练报告和本地质量检查 | 按需安装 |
 
 ## 发给新电脑 Codex
 
@@ -87,3 +88,13 @@ codex plugin add skill-maintenance@personal
 > $skill-maintainer 检查我指定的这些 skills，区分重复、触发重叠和规则冲突。保留现有能力与权限边界，完成必要的更新、合并及验证，告诉我改了什么和如何回退。
 
 [直接阅读 SKILL.md](plugins/skill-maintenance/skills/skill-maintainer/SKILL.md)；[公开研究材料](plugins/skill-maintenance/skills/skill-maintainer/references/sources.md)。无需私人 Obsidian 路径。
+
+## 羽毛球视频复盘
+
+可选插件 `badminton-review` 提供 `$badminton-video-review`。它要求先审阅完整回合边界，再生成短视频、片段时间表和三类专家结论。渲染器使用 FFmpeg 的 VideoToolbox 编码器和 BT.709 SDR 转换；不会自动导入「照片」。使用需要 macOS FFmpeg 构建包含 `h264_videotoolbox`、`zscale`、`tonemap` 和 `drawtext`。
+
+```bash
+codex plugin add badminton-review@personal
+```
+
+[入口 SKILL.md](plugins/badminton-review/skills/badminton-video-review/SKILL.md)；[计划结构](plugins/badminton-review/skills/badminton-video-review/references/manifest-schema.md)与[质量门槛](plugins/badminton-review/skills/badminton-video-review/references/quality-gates.md)。

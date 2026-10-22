@@ -1,0 +1,20 @@
+{
+  "name": "badminton-review",
+  "version": "0.1.0",
+  "description": "Review badminton footage, select complete rallies, render clips, and produce timestamped coaching reports.",
+  "author": {
+    "name": "spotify2junkie"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Badminton Video Review",
+    "shortDescription": "Review complete rallies with timestamped coaching notes",
+    "longDescription": "Inspect badminton footage, choose complete rallies across required categories, render a compact review video, and produce a timestamped report.",
+    "developerName": "spotify2junkie",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $badminton-video-review to review the supplied badminton video and produce a complete-rally edit with a timestamped report."
+    ]
+  }
+}
