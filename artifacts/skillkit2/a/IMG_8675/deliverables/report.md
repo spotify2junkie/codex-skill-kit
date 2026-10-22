@@ -5,10 +5,13 @@
 - Rendered duration: 52.006s (10.68% of source)
 - Clips: 4
 - Category coverage: core_technique, highlight_point, improvable_rally
-- Video: `/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8675/deliverables/review.mp4`
+- Video: `/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8675/deliverables/fix1/review.mp4`
 - Output: 2560×1440 h264 bt709/bt709/bt709, 83.1 MB
 - Local render validation: PASS
-- Visual subtitle inspection: PASS; five sampled source/output pairs across all four clips show readable subtitles centered in the lower third without covering the sampled key actions.
+- Visual subtitle inspection: PASS (four frames checked)
+- Source boundary frame review: PASS (8 windows per clip, 8 fps)
+- Boundary evidence manifest: `/Users/yh/ops/logs/skillkit2/a/fix1/evidence/final-reviewed/manifest.json`
+- Expert finding to clip mapping: PASS
 - Remote QA bot: not run
 
 ## Segment margins and findings
@@ -54,12 +57,12 @@
 - Clip: `00:05:52.000`–`00:06:09.500`
 - Serve contact: `00:05:55.600`; pre-serve margin: **3.588s**
 - Dead ball: `00:06:07.000`; post-dead-ball margin: **2.487s**
-- Reason: 回合末段粉色上衣球员向前扑救后坐倒，移动到低点时的支撑和恢复速度可加强。
-- Improvement drill: 低位接杀与网前救球交替：每次弓步用持拍脚稳定制动，触球后先推地回中，左右各 6 次。
+- Reason: 回合末段粉色上衣球员仍站在前场偏右；可练习触球后并步回中，及时恢复准备位。
+- Improvement drill: 前场触球后并步回中：交替喂直线与斜线球，击球后两步回到中线准备位，每侧 6 次。
 - Expert findings:
-  - 技术动作 at `00:06:06.500`: 触球后上身继续前冲，支撑腿未能把身体稳住，随后坐倒。
-  - 步法站位 at `00:06:07.500`: 重心落在前脚外侧，后脚未及时跟进，搭档需要向前补位。
-  - 战术球路 at `00:06:05.500`: 连续低球处理使防守者仍留在前场；可用更高的挑球暂时脱离被动。
+  - 技术动作 at `00:06:06.500`: 回合末段粉色上衣球员仍保持站立；触球后可将拍头及时带回身前。
+  - 步法站位 at `00:06:07.500`: 球死时粉色上衣球员仍站在前场偏右；可在击球后并步向中线回位。
+  - 战术球路 at `00:06:05.500`: 回合末段粉色球员仍处于前场偏右；可挑向后场为回位争取时间。
 
 ## Reference comparison
 

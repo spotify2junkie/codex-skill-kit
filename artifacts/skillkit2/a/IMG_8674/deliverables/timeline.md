@@ -40,9 +40,9 @@ Source: `/Users/yh/ops/tmp/badminton-cut/IMG_8674.MOV`
 
 ## rally-04 — improvable_rally (做得不好)
 
-- Clip: `00:05:54.000`–`00:06:11.000`
+- Clip: `00:05:54.000`–`00:06:18.000`
 - Serve contact: `00:05:57.800`; pre-serve margin: **3.787s**
-- Dead ball: `00:06:08.000`; post-dead-ball margin: **2.988s**
+- Dead ball: `00:06:08.000`; post-dead-ball margin: **9.992s**
 - Reason: 粉色上衣球员在回合末段向前救球时失衡并坐倒，落地后的身体控制和搭档补位是可改进点。
 - Improvement drill: 低位前场救球：从中前场分腿垫步启动，完成左右弓步后用非持拍手保持平衡并回到准备位，每侧 5 次。
 - Expert findings:

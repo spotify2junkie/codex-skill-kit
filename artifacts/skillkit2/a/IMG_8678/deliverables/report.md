@@ -2,13 +2,16 @@
 
 - Source: `/Users/yh/ops/tmp/badminton-cut/IMG_8678.MOV`
 - Source duration: 467.127s
-- Rendered duration: 49.003s (10.49% of source)
+- Rendered duration: 49.803s (10.66% of source)
 - Clips: 4
 - Category coverage: core_technique, highlight_point, improvable_rally
-- Video: `/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8678/deliverables/review.mp4`
-- Output: 2560×1440 h264 bt709/bt709/bt709, 78.3 MB
+- Video: `/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8678/deliverables/fix1/review.mp4`
+- Output: 2560×1440 h264 bt709/bt709/bt709, 79.6 MB
 - Local render validation: PASS
-- Visual subtitle inspection: PASS (five source/output frame pairs; lower-third center, readable, sampled racket/shuttle contacts remain visible)
+- Visual subtitle inspection: PASS (four frames checked)
+- Source boundary frame review: PASS (8 windows per clip, 8 fps)
+- Boundary evidence manifest: `/Users/yh/ops/logs/skillkit2/a/fix1/evidence/final-reviewed/manifest.json`
+- Expert finding to clip mapping: PASS
 - Remote QA bot: not run
 
 ## Segment margins and findings
@@ -27,8 +30,8 @@
 
 ## rally-02 — improvable_rally (做得不好)
 
-- Clip: `00:01:13.000`–`00:01:26.000`
-- Serve contact: `00:01:15.200`; pre-serve margin: **2.195s**
+- Clip: `00:01:12.200`–`00:01:26.000`
+- Serve contact: `00:01:13.125`; pre-serve margin: **0.920s**
 - Dead ball: `00:01:24.000`; post-dead-ball margin: **1.992s**
 - Reason: 白色上衣搭档多次向前场扑救，来球连续压在前场后身体回收较慢，左右覆盖容易拉开。
 - Improvement drill: 双打前场两点移动：搭档在后场维持直线球，前场球员左右各做弓步拦截并回到中前场，6 组。
@@ -60,19 +63,6 @@
   - 技术动作 at `00:06:03.000`: 网前触球采用短挥拍，拍头快速回到身前，有利于接下一拍。
   - 步法站位 at `00:06:04.000`: 前场与后场搭档保持纵向站位，前场球员触球后没有完全离开网前。
   - 战术球路 at `00:06:06.000`: 继续在前场控制线路，让后场搭档保持接续准备；注意失去进攻后同步回到防守位。
-
-## Visual and timestamp spot checks
-
-- Manual source/output timestamp checks: **5/5 match** (minimum required: 4/5).
-- Subtitle placement: lower-third center and readable in the inspected frames; sampled racket/shuttle contacts remain visible.
-
-| Output time | Source time | Clip | Result |
-|---:|---:|---|---|
-| 4.500s | 38.500s | rally-01 | Match |
-| 15.000s | 75.500s | rally-02 | Match |
-| 27.000s | 267.500s | rally-03 | Match |
-| 40.000s | 361.000s | rally-04 | Match |
-| 47.000s | 368.000s | rally-04 | Match |
 
 ## Reference comparison
 

@@ -116,21 +116,21 @@
       "dead_ball_s": 367.0,
       "end_s": 369.5,
       "verdict": "bad",
-      "reason": "回合末段粉色上衣球员向前扑救后坐倒，移动到低点时的支撑和恢复速度可加强。",
-      "drill": "低位接杀与网前救球交替：每次弓步用持拍脚稳定制动，触球后先推地回中，左右各 6 次。",
-      "subtitle": "低位救球后保持支撑",
+      "reason": "回合末段粉色上衣球员仍站在前场偏右；可练习触球后并步回中，及时恢复准备位。",
+      "drill": "前场触球后并步回中：交替喂直线与斜线球，击球后两步回到中线准备位，每侧 6 次。",
+      "subtitle": "前场触球后并步回中",
       "experts": {
         "technique": {
           "at_s": 366.5,
-          "conclusion": "触球后上身继续前冲，支撑腿未能把身体稳住，随后坐倒。"
+          "conclusion": "回合末段粉色上衣球员仍保持站立；触球后可将拍头及时带回身前。"
         },
         "footwork_position": {
           "at_s": 367.5,
-          "conclusion": "重心落在前脚外侧，后脚未及时跟进，搭档需要向前补位。"
+          "conclusion": "球死时粉色上衣球员仍站在前场偏右；可在击球后并步向中线回位。"
         },
         "tactics_shot_selection": {
           "at_s": 365.5,
-          "conclusion": "连续低球处理使防守者仍留在前场；可用更高的挑球暂时脱离被动。"
+          "conclusion": "回合末段粉色球员仍处于前场偏右；可挑向后场为回位争取时间。"
         }
       },
       "actual_first_frame_s": 352.011667,
@@ -141,7 +141,7 @@
     }
   ],
   "render": {
-    "path": "/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8675/deliverables/review.mp4",
+    "path": "/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8675/deliverables/fix1/review.mp4",
     "duration_s": 52.006,
     "source_duration_ratio": 0.10677242311682869,
     "clip_count": 4,
@@ -156,7 +156,7 @@
     "color_primaries": "bt709",
     "color_transfer": "bt709",
     "color_space": "bt709",
-    "file_size_bytes": 83050847,
+    "file_size_bytes": 83051795,
     "encoding": "FFmpeg h264_videotoolbox"
   },
   "qa": {
@@ -168,49 +168,10 @@
       "rendered duration <= 120s and <= 25% of source",
       "VideoToolbox H.264, >=2560x1440, BT.709 SDR, <=500MB"
     ],
-    "subtitle_visual_review": "PASS: visually checked five decoded source/output frame pairs across all four clips; lower-third center placement is readable and does not obscure the sampled key actions.",
+    "subtitle_visual_review": "PASS: four extracted subtitle frames inspected for this video",
     "remote_qa_bot": "NOT RUN",
-    "manual_timestamp_spot_checks": {
-      "required": 5,
-      "matches": 5,
-      "minimum_matches": 4,
-      "results": [
-        {
-          "output_s": 4.5,
-          "source_s": 74.5,
-          "clip_id": "rally-01",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; does not cover visible racket/serve action"
-        },
-        {
-          "output_s": 12.5,
-          "source_s": 109.712,
-          "clip_id": "rally-02",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; does not cover visible contact action"
-        },
-        {
-          "output_s": 26.5,
-          "source_s": 232.521,
-          "clip_id": "rally-03",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; does not cover visible overhead action"
-        },
-        {
-          "output_s": 44.0,
-          "source_s": 361.514,
-          "clip_id": "rally-04",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; does not cover visible movement action"
-        },
-        {
-          "output_s": 50.0,
-          "source_s": 367.514,
-          "clip_id": "rally-04",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; does not cover visible recovery action"
-        }
-      ]
-    }
+    "boundary_visual_review": "PASS: every planned serve/dead-ball time matches reviewed 8 fps frames",
+    "expert_commentary_visual_review": "PASS: timestamped findings reviewed against their own source rallies; IMG_8675 rally-04 has full-frame evidence",
+    "boundary_audit_manifest": "/Users/yh/ops/logs/skillkit2/a/fix1/evidence/final-reviewed/manifest.json"
   }
 }

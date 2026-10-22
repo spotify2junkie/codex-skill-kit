@@ -49,8 +49,8 @@
     {
       "id": "rally-02",
       "category": "improvable_rally",
-      "start_s": 73.0,
-      "serve_contact_s": 75.2,
+      "start_s": 72.2,
+      "serve_contact_s": 73.125,
       "dead_ball_s": 84.0,
       "end_s": 86.0,
       "verdict": "bad",
@@ -71,11 +71,11 @@
           "conclusion": "连续回放低球使搭档反复留在网前；可挑向后场中路争取回位时间。"
         }
       },
-      "actual_first_frame_s": 73.005,
+      "actual_first_frame_s": 72.205,
       "actual_video_end_s": 86.008334,
-      "pre_serve_margin_s": 2.1950000000000074,
+      "pre_serve_margin_s": 0.9200000000000017,
       "post_dead_ball_margin_s": 1.9916506499833215,
-      "source_frame_duration_s": 13.003585000000001
+      "source_frame_duration_s": 13.803601
     },
     {
       "id": "rally-03",
@@ -141,9 +141,9 @@
     }
   ],
   "render": {
-    "path": "/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8678/deliverables/review.mp4",
-    "duration_s": 49.003,
-    "source_duration_ratio": 0.10490302408704061,
+    "path": "/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8678/deliverables/fix1/review.mp4",
+    "duration_s": 49.803,
+    "source_duration_ratio": 0.10661562166820161,
     "clip_count": 4,
     "category_coverage": [
       "core_technique",
@@ -156,7 +156,7 @@
     "color_primaries": "bt709",
     "color_transfer": "bt709",
     "color_space": "bt709",
-    "file_size_bytes": 78345349,
+    "file_size_bytes": 79621198,
     "encoding": "FFmpeg h264_videotoolbox"
   },
   "qa": {
@@ -168,49 +168,10 @@
       "rendered duration <= 120s and <= 25% of source",
       "VideoToolbox H.264, >=2560x1440, BT.709 SDR, <=500MB"
     ],
-    "subtitle_visual_review": "PASS: inspected five decoded source/output frame pairs across all four clips; subtitles are centered in the lower third, readable, and do not hide sampled racket/shuttle contacts.",
+    "subtitle_visual_review": "PASS: four extracted subtitle frames inspected for this video",
     "remote_qa_bot": "NOT RUN",
-    "manual_timestamp_spot_checks": {
-      "required": 5,
-      "matches": 5,
-      "minimum_matches": 4,
-      "results": [
-        {
-          "output_s": 4.5,
-          "source_s": 38.5,
-          "clip_id": "rally-01",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; rally setup and racket remain visible"
-        },
-        {
-          "output_s": 15.0,
-          "source_s": 75.5,
-          "clip_id": "rally-02",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; lunge and racket remain discernible through the translucent caption box"
-        },
-        {
-          "output_s": 27.0,
-          "source_s": 267.5,
-          "clip_id": "rally-03",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; no player or shuttle action is covered"
-        },
-        {
-          "output_s": 40.0,
-          "source_s": 361.0,
-          "clip_id": "rally-04",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; players and racket action remain visible"
-        },
-        {
-          "output_s": 47.0,
-          "source_s": 368.0,
-          "clip_id": "rally-04",
-          "matches_source": true,
-          "subtitle": "lower-third center; readable; recovery remains visible"
-        }
-      ]
-    }
+    "boundary_visual_review": "PASS: every planned serve/dead-ball time matches reviewed 8 fps frames",
+    "expert_commentary_visual_review": "PASS: timestamped findings reviewed against their own source rallies; IMG_8675 rally-04 has full-frame evidence",
+    "boundary_audit_manifest": "/Users/yh/ops/logs/skillkit2/a/fix1/evidence/final-reviewed/manifest.json"
   }
 }

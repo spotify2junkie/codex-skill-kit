@@ -16,8 +16,8 @@ Source: `/Users/yh/ops/tmp/badminton-cut/IMG_8678.MOV`
 
 ## rally-02 — improvable_rally (做得不好)
 
-- Clip: `00:01:13.000`–`00:01:26.000`
-- Serve contact: `00:01:15.200`; pre-serve margin: **2.195s**
+- Clip: `00:01:12.200`–`00:01:26.000`
+- Serve contact: `00:01:13.125`; pre-serve margin: **0.920s**
 - Dead ball: `00:01:24.000`; post-dead-ball margin: **1.992s**
 - Reason: 白色上衣搭档多次向前场扑救，来球连续压在前场后身体回收较慢，左右覆盖容易拉开。
 - Improvement drill: 双打前场两点移动：搭档在后场维持直线球，前场球员左右各做弓步拦截并回到中前场，6 组。

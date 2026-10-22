@@ -114,7 +114,7 @@
       "start_s": 354.0,
       "serve_contact_s": 357.8,
       "dead_ball_s": 368.0,
-      "end_s": 371.0,
+      "end_s": 378.0,
       "verdict": "bad",
       "reason": "粉色上衣球员在回合末段向前救球时失衡并坐倒，落地后的身体控制和搭档补位是可改进点。",
       "drill": "低位前场救球：从中前场分腿垫步启动，完成左右弓步后用非持拍手保持平衡并回到准备位，每侧 5 次。",
@@ -134,16 +134,16 @@
         }
       },
       "actual_first_frame_s": 354.013333,
-      "actual_video_end_s": 371.005,
+      "actual_video_end_s": 378.008334,
       "pre_serve_margin_s": 3.7866670000000227,
-      "post_dead_ball_margin_s": 2.9883166499833123,
-      "source_frame_duration_s": 16.992003
+      "post_dead_ball_margin_s": 9.991650649983308,
+      "source_frame_duration_s": 23.995475000000003
     }
   ],
   "render": {
-    "path": "/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8674/deliverables/review.mp4",
-    "duration_s": 50.015,
-    "source_duration_ratio": 0.11812892670182883,
+    "path": "/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8674/deliverables/fix1/review.mp4",
+    "duration_s": 57.015,
+    "source_duration_ratio": 0.13466201651314147,
     "clip_count": 4,
     "category_coverage": [
       "core_technique",
@@ -156,7 +156,7 @@
     "color_primaries": "bt709",
     "color_transfer": "bt709",
     "color_space": "bt709",
-    "file_size_bytes": 79907109,
+    "file_size_bytes": 91051243,
     "encoding": "FFmpeg h264_videotoolbox"
   },
   "qa": {
@@ -168,49 +168,10 @@
       "rendered duration <= 120s and <= 25% of source",
       "VideoToolbox H.264, >=2560x1440, BT.709 SDR, <=500MB"
     ],
-    "subtitle_visual_review": "PASS: inspected five decoded source/output frame pairs across all four clips; subtitles are centered in the lower third, readable, and do not hide sampled racket/shuttle actions.",
+    "subtitle_visual_review": "PASS: four extracted subtitle frames inspected for this video",
     "remote_qa_bot": "NOT RUN",
-    "manual_timestamp_spot_checks": {
-      "required": 5,
-      "matches": 5,
-      "minimum_matches": 4,
-      "results": [
-        {
-          "output_s": 4.5,
-          "source_s": 134.5,
-          "clip_id": "rally-01",
-          "matches_source": true,
-          "subtitle": "subtitle centered in lower third; legible; no racket or serve action covered"
-        },
-        {
-          "output_s": 14.0,
-          "source_s": 221.5,
-          "clip_id": "rally-02",
-          "matches_source": true,
-          "subtitle": "subtitle centered in lower third; legible; players and rally setup remain visible"
-        },
-        {
-          "output_s": 27.0,
-          "source_s": 315.0,
-          "clip_id": "rally-03",
-          "matches_source": true,
-          "subtitle": "subtitle centered in lower third; legible; swing and shuttle remain visible"
-        },
-        {
-          "output_s": 40.0,
-          "source_s": 361.0,
-          "clip_id": "rally-04",
-          "matches_source": true,
-          "subtitle": "subtitle centered in lower third; legible; players remain visible outside caption area"
-        },
-        {
-          "output_s": 48.0,
-          "source_s": 369.0,
-          "clip_id": "rally-04",
-          "matches_source": true,
-          "subtitle": "subtitle centered in lower third; legible; recovery remains visible"
-        }
-      ]
-    }
+    "boundary_visual_review": "PASS: every planned serve/dead-ball time matches reviewed 8 fps frames",
+    "expert_commentary_visual_review": "PASS: timestamped findings reviewed against their own source rallies; IMG_8675 rally-04 has full-frame evidence",
+    "boundary_audit_manifest": "/Users/yh/ops/logs/skillkit2/a/fix1/evidence/final-reviewed/manifest.json"
   }
 }

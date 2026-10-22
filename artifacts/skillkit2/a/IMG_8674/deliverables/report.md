@@ -2,13 +2,16 @@
 
 - Source: `/Users/yh/ops/tmp/badminton-cut/IMG_8674.MOV`
 - Source duration: 423.393s
-- Rendered duration: 50.015s (11.81% of source)
+- Rendered duration: 57.015s (13.47% of source)
 - Clips: 4
 - Category coverage: core_technique, highlight_point, improvable_rally
-- Video: `/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8674/deliverables/review.mp4`
-- Output: 2560×1440 h264 bt709/bt709/bt709, 79.9 MB
+- Video: `/Users/yh/src/codex-skill-kit-wt-a/artifacts/skillkit2/a/IMG_8674/deliverables/fix1/review.mp4`
+- Output: 2560×1440 h264 bt709/bt709/bt709, 91.1 MB
 - Local render validation: PASS
-- Visual subtitle inspection: PASS (five source/output frame pairs; lower-third center, readable, sampled racket/shuttle actions remain visible)
+- Visual subtitle inspection: PASS (four frames checked)
+- Source boundary frame review: PASS (8 windows per clip, 8 fps)
+- Boundary evidence manifest: `/Users/yh/ops/logs/skillkit2/a/fix1/evidence/final-reviewed/manifest.json`
+- Expert finding to clip mapping: PASS
 - Remote QA bot: not run
 
 ## Segment margins and findings
@@ -51,28 +54,15 @@
 
 ## rally-04 — improvable_rally (做得不好)
 
-- Clip: `00:05:54.000`–`00:06:11.000`
+- Clip: `00:05:54.000`–`00:06:18.000`
 - Serve contact: `00:05:57.800`; pre-serve margin: **3.787s**
-- Dead ball: `00:06:08.000`; post-dead-ball margin: **2.988s**
+- Dead ball: `00:06:08.000`; post-dead-ball margin: **9.992s**
 - Reason: 粉色上衣球员在回合末段向前救球时失衡并坐倒，落地后的身体控制和搭档补位是可改进点。
 - Improvement drill: 低位前场救球：从中前场分腿垫步启动，完成左右弓步后用非持拍手保持平衡并回到准备位，每侧 5 次。
 - Expert findings:
   - 技术动作 at `00:06:07.000`: 低位救球后上身继续前倾，触球后的支撑不足，身体落到地面。
   - 步法站位 at `00:06:08.500`: 前场弓步后的后脚支撑未能及时收回，失衡后搭档才靠近补位。
   - 战术球路 at `00:06:06.000`: 救球把回合继续留在网前，但回球后身体无法快速回到防守位；可优先选择较高的安全挑球。
-
-## Visual and timestamp spot checks
-
-- Manual source/output timestamp checks: **5/5 match** (minimum required: 4/5).
-- Subtitle placement: lower-third center and readable in the inspected frames; sampled racket/shuttle actions remain visible.
-
-| Output time | Source time | Clip | Result |
-|---:|---:|---|---|
-| 4.500s | 134.500s | rally-01 | Match |
-| 14.000s | 221.500s | rally-02 | Match |
-| 27.000s | 315.000s | rally-03 | Match |
-| 40.000s | 361.000s | rally-04 | Match |
-| 48.000s | 369.000s | rally-04 | Match |
 
 ## Reference comparison
 

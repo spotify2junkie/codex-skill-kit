@@ -34,8 +34,8 @@
     {
       "id": "rally-02",
       "category": "improvable_rally",
-      "start_s": 73.0,
-      "serve_contact_s": 75.2,
+      "start_s": 72.2,
+      "serve_contact_s": 73.125,
       "dead_ball_s": 84.0,
       "end_s": 86.0,
       "verdict": "bad",

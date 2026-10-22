@@ -10,7 +10,7 @@ Create a complete-rally edit and a source-backed coaching report. Do not guess s
 ## Workflow
 
 1. Read the user's acceptance criteria and any reference project first. The most recent explicit criteria take precedence. Keep source media local; do not upload it to external services.
-2. Probe the video and review it from start to end. Use a coarse contact sheet to find rallies, then inspect each selected rally closely enough to locate first serve contact and the point-ending dead ball. Describe people by visible clothing or court position unless the user identifies them.
+2. Probe the video and review it from start to end. Use a coarse contact sheet to find rallies, then inspect each selected rally closely enough to locate first serve contact and the point-ending dead ball. For every final plan, create a 1-second, 8-fps contact sheet starting 0.75 seconds before each annotated serve and dead-ball timestamp. Use `scripts/audit_rally_boundaries.py` to create these sheets. Visually review every sheet against its source clip, then mark each manifest row `PASS`. The renderer rejects a missing, stale, incomplete, or unreviewed manifest. Treat a timestamp as a hypothesis until the frames show the event; correct it or exclude the rally when the event is unclear. Describe people by visible clothing or court position unless the user identifies them.
 3. Select 4–12 whole rallies, with at least one `core_technique`, one `improvable_rally`, and one `highlight_point`. Keep each in/out around the full rally. The clip must begin at least 0.5 seconds before serve contact and end at least 0.5 seconds after the dead ball. If the runtime is too long, drop a whole lower-value rally and recheck category coverage. Never cut through an exchange.
 4. For each rally, record `做得好` or `做得不好`, a visible reason, and a specific improvement drill. Independently review the same evidence through three lenses: technique, footwork and court position, and tactics/shot selection. Every finding needs its own source timestamp and visible evidence. Do not state that a human coach verified a conclusion unless they did.
 5. Write a review JSON using the schema in `references/manifest-schema.md`. Keep the source path and all timestamps in source-relative seconds. Include concise Chinese subtitles. Leave `IMG_8677` out when working on the required test set.
@@ -24,9 +24,11 @@ Create a complete-rally edit and a source-backed coaching report. Do not guess s
    source="$HOME/path/to/match.MOV"
    plan="$HOME/path/to/review-plan.json"
    output_dir="$HOME/path/to/new-deliverables"
+   boundary_audit="$HOME/path/to/reviewed-boundaries/manifest.json"
    python3 "$plugin_root/scripts/badminton_review.py" \
      --source "$source" \
      --plan "$plan" \
+     --boundary-audit "$boundary_audit" \
      --output-dir "$output_dir"
    ```
 
