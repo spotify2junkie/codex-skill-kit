@@ -13,6 +13,9 @@ import subprocess
 import sys
 from typing import Any
 
+from subtitle_evidence import EvidenceError, validate_evidence
+from subtitle_layout import FrameSize, plan_caption
+
 
 REQUIRED_CATEGORIES = {"core_technique", "improvable_rally", "highlight_point"}
 EXPERTS = {
@@ -89,10 +92,14 @@ def probe(path: Path) -> dict[str, Any]:
         raise ReviewError(f"No video stream in {path}")
     video = videos[0]
     duration = float(data["format"]["duration"])
+    video_duration = float(video.get("duration", duration))
     if duration <= 0:
         raise ReviewError(f"Invalid duration for {path}")
+    if not math.isfinite(video_duration) or video_duration <= 0:
+        raise ReviewError(f"Invalid video stream duration for {path}")
     return {
         "duration_s": duration,
+        "video_duration_s": video_duration,
         "width": int(video["width"]),
         "height": int(video["height"]),
         "video_codec": video.get("codec_name"),
@@ -235,7 +242,9 @@ def validate_plan(
         segment["subtitle"] = _text(
             segment.get("subtitle"), f"{segment['id']} subtitle", 48
         )
-        if any(ch in segment["subtitle"] for ch in "'\\%[]"):
+        if any(
+            ch in segment["subtitle"] for ch in "'\\%[]\n\r"
+        ):
             raise ReviewError(
                 f"Segment {segment['id']} subtitle contains unsupported "
                 "render characters"
@@ -447,7 +456,14 @@ def build_filter(segments: list[dict[str, Any]], has_audio: bool) -> str:
     concat_inputs: list[str] = []
     for index, s in enumerate(segments):
         label = f"v{index}"
-        text = _escape_filter_text(s["subtitle"])
+        caption_duration = float(
+            s.get("source_frame_duration_s", s["end_s"] - s["start_s"])
+        )
+        caption = plan_caption(
+            s["subtitle"],
+            duration_s=caption_duration,
+            frame=FrameSize(OUTPUT_WIDTH, OUTPUT_HEIGHT),
+        )
         vchain = (
             f"[0:v:0]trim=start={s['start_s']:.6f}:end={s['end_s']:.6f},"
             "setpts=PTS-STARTPTS,"
@@ -455,14 +471,30 @@ def build_filter(segments: list[dict[str, Any]], has_audio: bool) -> str:
             "tonemap=tonemap=hable:desat=0,"
             "zscale=primaries=bt709:transfer=bt709:matrix=bt709:range=tv,"
             f"scale={OUTPUT_WIDTH}:{OUTPUT_HEIGHT}:flags=lanczos,"
-            "format=yuv420p,"
-            "drawtext=text='" + text + f"':fontfile={FONT_FILE}:"
-            "fontcolor=white:fontsize=50:borderw=2:bordercolor=black@0.8:"
-            "box=1:boxcolor=black@0.58:boxborderw=18:"
-            "x=(w-text_w)/2:y=h*0.8333-text_h/2,setsar=1,"
-            "setparams=range=limited:color_primaries=bt709:"
-            "color_trc=bt709:colorspace=bt709"
-            f"[{label}]"
+            "format=yuv420p"
+        )
+        for page in caption.pages:
+            text = "\n".join(
+                _escape_filter_text(line) for line in page.lines
+            )
+            vchain += (
+                ",drawtext=text='"
+                + text
+                + f"':fontfile={FONT_FILE}:"
+                + "fontcolor=white:"
+                + f"fontsize={caption.style.font_size_px}:"
+                + f"borderw={caption.style.outline_px}:bordercolor=black:"
+                + "box=1:boxcolor=black@0.58:"
+                + f"boxborderw={caption.style.box_padding_px}:"
+                + "text_align=center:line_spacing=0:"
+                + "x=(w-text_w)/2:"
+                + f"y=h*{caption.style.center_y_fraction:.6f}-text_h/2:"
+                + f"enable='gte(t,{page.start_s:.6f})*"
+                + f"lt(t,{page.end_s:.6f})'"
+            )
+        vchain += (
+            ",setsar=1,setparams=range=limited:color_primaries=bt709:"
+            f"color_trc=bt709:colorspace=bt709[{label}]"
         )
         filters.append(vchain)
         concat_inputs.append(f"[{label}]")
@@ -547,6 +579,7 @@ def render(
     *,
     check_only: bool = False,
     boundary_audit: Path | None = None,
+    subtitle_evidence_manifest: Path | None = None,
 ) -> dict[str, Any]:
     source = source.resolve()
     plan_path = plan_path.resolve()
@@ -582,11 +615,25 @@ def render(
         video = output_dir / "review.mp4"
         rendered = probe(video)
         validate_report(report, media, rendered, video)
-        return {
+        result = {
             "status": "PASS",
             "video": str(video),
             "duration_s": rendered["duration_s"],
         }
+        if subtitle_evidence_manifest is not None:
+            try:
+                evidence = validate_evidence(
+                    subtitle_evidence_manifest,
+                    video,
+                    duration_s=rendered["video_duration_s"],
+                    width_px=rendered["width"],
+                    height_px=rendered["height"],
+                )
+            except EvidenceError as exc:
+                raise ReviewError(str(exc)) from exc
+            result["subtitle_visual_review"] = "PASS"
+            result["subtitle_sample_count"] = len(evidence["samples"])
+        return result
 
     if boundary_audit is None:
         raise ReviewError(
@@ -848,6 +895,10 @@ def main(argv: list[str] | None = None) -> int:
         help="Visually approved manifest from audit_rally_boundaries.py",
     )
     parser.add_argument(
+        "--subtitle-evidence-manifest",
+        help="Every-four-second subtitle evidence with PASS visual review",
+    )
+    parser.add_argument(
         "--log", help="Append FFmpeg/ffprobe output to this log file"
     )
     args = parser.parse_args(argv)
@@ -862,6 +913,11 @@ def main(argv: list[str] | None = None) -> int:
             boundary_audit=(
                 expand_path(args.boundary_audit)
                 if args.boundary_audit
+                else None
+            ),
+            subtitle_evidence_manifest=(
+                expand_path(args.subtitle_evidence_manifest)
+                if args.subtitle_evidence_manifest
                 else None
             ),
         )

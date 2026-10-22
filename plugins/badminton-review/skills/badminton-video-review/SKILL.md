@@ -33,7 +33,7 @@ Create a complete-rally edit and a source-backed coaching report. Do not guess s
    ```
 
    Use the same command for each approved input. Resolve paths from `$HOME` or `$OPS_ROOT`; do not put a machine-specific `/Users/...` path in packaged scripts or configuration.
-7. Inspect rendered frames from every video. Confirm the subtitle sits in the horizontal center of the lower third, is legible, and does not cover a player's key action. Probe the final MP4 and run `--check` against its report. A render is not accepted if a quality gate fails.
+7. Inspect rendered frames from every video. Keep subtitles at least 5.2% of frame height, center the block horizontally and within 82–90% of frame height, and leave a 5% bottom margin including its outline and box. Use white text, a black outline of at least 3 px, and a translucent black box. Limit each page to two lines and 18 code points per line; paginate instead of shrinking the type. Use `scripts/subtitle_evidence.py` to extract every four-second FFmpeg sample and matching old/new comparisons. Review every after frame, mark the sample rows `PASS`, and run `badminton_review.py --check --subtitle-evidence-manifest <manifest.json>` with the final MP4 checks. A render is not accepted if a quality gate fails.
 
 ## Required output
 
