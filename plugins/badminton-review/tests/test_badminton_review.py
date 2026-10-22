@@ -126,6 +126,12 @@ class ValidatePlanTests(unittest.TestCase):
         ):
             review.validate_plan(self.plan, self.source, self.media)
 
+    def test_rejects_embedded_subtitle_line_breaks(self) -> None:
+        self.plan["segments"][0]["subtitle"] = "第一行\n第二行"
+
+        with self.assertRaisesRegex(review.ReviewError, "unsupported"):
+            review.validate_plan(self.plan, self.source, self.media)
+
 
 class BoundaryAuditTests(unittest.TestCase):
     def setUp(self) -> None:
