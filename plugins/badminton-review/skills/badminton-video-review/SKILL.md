@@ -10,6 +10,11 @@ Create a complete-rally edit and a source-backed coaching report. Do not guess s
 ## Workflow
 
 1. Read the user's acceptance criteria and any reference project first. The most recent explicit criteria take precedence. Keep source media local; do not upload it to external services.
+   Before rendering a match label, check the matchup and round against the source notes.
+   The MD-01 Cheng En Tan / Teoh Chen Shen versus MD-02 Howard Ng / Sherman Sua match
+   in `IMG_8988.MOV` is the Semi Final (third-place playoff context). Use `Semi Final`
+   in its title, timeline, and metadata. Reject `Finals` for this matchup even when
+   an older EDL or title asset contains it.
 2. Probe the video and review it from start to end. Use a coarse contact sheet to find rallies, then inspect each selected rally closely enough to locate first serve contact and the point-ending dead ball. For every final plan, create a 1-second, 8-fps contact sheet starting 0.75 seconds before each annotated serve and dead-ball timestamp. Use `scripts/audit_rally_boundaries.py` to create these sheets. Visually review every sheet against its source clip, then mark each manifest row `PASS`. The renderer rejects a missing, stale, incomplete, or unreviewed manifest. Treat a timestamp as a hypothesis until the frames show the event; correct it or exclude the rally when the event is unclear. Describe people by visible clothing or court position unless the user identifies them.
 3. Select 4–12 whole rallies, with at least one `core_technique`, one `improvable_rally`, and one `highlight_point`. Keep each in/out around the full rally. The clip must begin at least 0.5 seconds before serve contact and end at least 0.5 seconds after the dead ball. If the runtime is too long, drop a whole lower-value rally and recheck category coverage. Never cut through an exchange.
 4. For each rally, record `做得好` or `做得不好`, a visible reason, and a specific improvement drill. Independently review the same evidence through three lenses: technique, footwork and court position, and tactics/shot selection. Every finding needs its own source timestamp and visible evidence. Do not state that a human coach verified a conclusion unless they did.
