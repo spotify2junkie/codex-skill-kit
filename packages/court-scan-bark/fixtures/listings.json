@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2026-11-03",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "durationMinutes": 120,
+    "surface": "wood",
+    "venue": "REA Central Court 2",
+    "location": "Central Singapore",
+    "url": "https://example.test/listings/rea-central-2"
+  },
+  {
+    "date": "2026-11-03",
+    "startTime": "18:30",
+    "endTime": "20:30",
+    "durationMinutes": 120,
+    "surface": "rubber",
+    "venue": "Early Court",
+    "url": "https://example.test/listings/early"
+  }
+]
